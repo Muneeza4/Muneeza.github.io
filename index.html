@@ -30,6 +30,7 @@
 //--//-->   ABOUT
 ======================================*/
 
+/* About section styles */
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -37,34 +38,31 @@
 
 .about-mf .about-img {
   margin-bottom: 2rem;
-  
 }
 
-	
 .about-mf .about-img img {
   margin-left: 10px;
 }
 
-
+/* Skill section styles */
 .skill-mf .progress {
   /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
+  margin: 0.5rem 0 1.2rem 0;
   border-radius: 0;
-  height: .7rem;
+  height: 0.7rem;
 }
 
 .skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
+  height: 0.7rem;
+  background-color: #ffbd39; /* Original yellow; modify if needed */
 }
-
 
 /* Animation styles */
 #typing-animation {
   position: relative;
   font-size: 30px;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: #5a3e36; /* Changed from white (rgb(255, 255, 255)) to dark brown (#5a3e36) */
   overflow: hidden;
   white-space: nowrap;
   animation: typing 3s steps(20, end) infinite;
@@ -72,7 +70,6 @@
 
 #typing-animation:before {
   content: "";
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 0;
@@ -81,6 +78,7 @@
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
 
+/* Typing animation keyframes */
 @keyframes typing {
   from {
     width: 0;
@@ -99,9 +97,7 @@
   }
 }
 
-
-/* project image zoom effect */
-
+/* Project image zoom effect */
 .zoom-effect {
   overflow: hidden;
   transition: transform 0.3s ease-out;
