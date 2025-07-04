@@ -82,7 +82,450 @@
       }
     </style>
   </head>
-  <body>
-    <!-- Your existing body content remains unchanged, just color enhancements and positioning improvements -->
-  </body>
-</html>
+
+
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #F1F0E8;">
+
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Muneeza</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Scientist  ',
+						'Data Analyst  ',
+						'Machine Learning  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+
+					
+			            
+
+			            <p><a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" class="btn btn-primary py-3 px-4" style="color: #4E3629 !important;" >linkedin</a> 
+<!-- 							<a href="https://github.com/Muneeza4" class="btn btn-white btn-outline-white py-3 px-4" style="color: #4E3629 !important;" >GitHub</a> -->
+							<a href="https://www.kaggle.com/muneeza3" class="btn btn-white btn-outline-white py-3 px-4" style="color: #4E3629 !important;" >Kaggle</a>
+						
+						</p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+		<div class="row justify-content-start pb-3">
+<div class="col-md-12 heading-section ftco-animate">
+    <h2 class="mb-4" style="color: #4E3629; font-family: 'Lora', serif;">About Me</h2>
+
+    <p>Hi there! I'm Muneeza, a passionate student of Data Science with a strong interest in machine learning, data mining, and big data analytics. I have skills in Python, SQL, data mining, and Power BI, and I'm actively working on projects related to machine learning and data analysis.</p>
+    <p>Through hands-on projects and self-directed learning, I'm exploring the intricacies of data analysis and machine learning, seeking to understand how data-driven insights and predictive models can drive meaningful change in various domains. From manipulating datasets and extracting valuable information to crafting compelling visualizations and building machine learning models, I'm constantly pushing myself to learn and grow in this dynamic field.</p>
+    
+    <h3 class="mt-4" style="color: #4E3629; font-family: 'Lora', serif;">Skills</h3>
+    <ul class="about-info mt-4 px-md-0 px-2">
+        <li><strong>Programming Languages:</strong> &nbsp;Python, SQL</li>
+        <li><strong>Tools & Technologies:</strong> &nbsp;Power BI, Jupyter, Excel, GitHub</li>
+        <li><strong>Machine Learning & Data Science:</strong> &nbsp;Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Plotly</li>
+        <li><strong>NLP & Text Analytics:</strong> &nbsp;NLTK, Bag of Words, TFIDF, Text Preprocessing</li>
+        <li><strong>Data Analysis & Visualization:</strong> &nbsp;Data Cleaning, Exploratory Data Analysis (EDA), Feature Engineering</li>
+        <li><strong>Statistics:</strong> &nbsp;Statistical Analysis</li>
+    </ul>
+</div>
+
+
+
+		</div>
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<!-- <span class="number" data-number="30">0</span> <span>+</span> -->
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<a href="https://github.com/Muneeza4" class="btn btn-primary py-3 px-4">GitHub</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h2 class="mb-4" style="color: #4E3629; font-family: 'Lora', serif;">Resume</h2>
+            <p>Passionate Data Scientist with a strong inclination towards data analysis and visualization. Proficient in
+				Python, SOL, Excel, and Power BI, adept at transforming complex data into actionable insights and visually
+				compelling dashboards.
+				</p>
+          </div>
+        </div>
+
+	        <div class="row">
+		     <h1 class="big-4" style="color: #4E3629; font-family: 'Lora', serif;"><b>Certificates</b></h1>
+		     <div class="underline"></div>
+	        </div>
+	        <br>
+	
+	        <div class="row">
+
+			    <div class="col-md-6">
+				  <div class="resume-wrap ftco-animate">
+				    <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Data Mining</span>
+					<h2 style="color: #AB886D; ">Issuing Organization: Great Learning</h2>
+					<p class="mt-4">
+					<P>Studied data mining techniques including classification, clustering, association analysis, and anomaly detection, with a focus on extracting valuable insights from large datasets.</P>
+					</p>
+				  </div>
+			    </div>
+
+			    <div class="col-md-6">
+				    <div class="resume-wrap ftco-animate">
+					  <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Statistics for data science</span>
+					  <h2 style="color: #AB886D;">Issuing Organization: Simplilearn</h2>
+					  <p class="mt-4">I've completed a comprehensive Statistics course!
+					  <p>Learned key statistical techniques like probability, hypothesis testing, and regression analysis, applied to data science problems for insightful decision-making.</p>
+					  
+					</p>
+			        </div>
+			    </div>
+
+
+			    <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+					  <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Python</span>
+					  <h2 style="color: #AB886D;">Issuing Organization: Kaggle</h2>
+                      <p class="mt-4"><p> I've earned a certificate in Python from Kaggle!</p>
+					  <p>This certificate demonstrates my proficiency in Python, covering key areas such as syntax, data structures, and libraries like NumPy, Pandas, Matplotlib and Seaborn.</p>
+				    </div>
+				</div>
+
+
+			    <div class="col-md-6">
+				   <div class="resume-wrap ftco-animate">
+                     <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Machine Learning Algorithms</span>
+                     <h2 style="color: #AB886D;">Issuing Organization: Great Learning</h2>
+					 <p class="mt-4"><p>I've earned a certificate in Machine Learning Algorithms.</p>
+					 <p>This journey has been incredibly rewarding, providing me with deep insights and practical skills in various machine learning techniques and algorithms to solve problems.</p>
+
+				    </div>
+				</div>
+
+
+
+			    <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+					  <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Image Recognition using Machine Learning</span>
+					  <h2 style="color: #AB886D;">Issuing Organization: Simplilearn</h2>
+                      <p class="mt-4">
+					  <p>Completed a course on image recognition using machine learning, gaining expertise in applying machine learning models and algorithms for object classification and image analysis.</p>
+				    </div>
+				</div>
+
+
+			    <div class="col-md-6">
+				   <div class="resume-wrap ftco-animate">
+                     <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Intro Machine Learning</span>
+                     <h2 style="color: #AB886D;">Issuing Organization: Kaggle</h2>
+					 <p class="mt-4"><p>I've earned a certificate in Machine Learning Algorithms.</p>
+					 <p>Completed the "Intro to Machine Learning" course on Kaggle, covering key concepts such as supervised and unsupervised learning, data preprocessing, and model evaluation.</p>
+				    </div>
+				</div>
+
+		
+		</div>
+
+	<br>
+	<br>
+
+
+		<div class="row">
+			<h1 class="big-4" style="color: #4E3629; font-family: 'Lora', serif;"><b>Education</b></h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date" style="color: #AB886D; font-family: 'Lora', serif;">2021-2025</span>
+    					<h2 style="color: #AB886D;" >Bachelor of Data Science</h2>
+    					<span class="position">MNS University of Agriculture, Multan.</span>
+    					<p class="mt-4">Grade: A+</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date" style="color: #AB886D; font-family: 'Lora', serif;">2019-2021</span>
+    					<h2 style="color: #AB886D;">Intermediate of Computer Science</h2>
+    					<span class="position">City College of Science and Commerce</span>
+    					<p class="mt-4">Grade: A+</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1p15vONBnORFq_fbI9eE__x9QHa1oxMU3/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <!-- <h1 class="big big-2" style="color: #4E3629; font-family: 'Lora', serif;" ><b>Projects</b></h1> -->
+            <h2 class="mb-4"style="color: #4E3629; font-family: 'Lora', serif;"  ><b>Projects</b></h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+		
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<a href="https://jobrecommendationsystem-app.streamlit.app/" class="block-20 zoom-effect" style="background-image: url('images/Job_recommendation.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+						<h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;" ><a href="https://github.com/Muneeza4/Job-Recommendation-System" style="color: inherit;"><b>Personalized Job Recommendation System Leveraging TF-IDF and Cosine Similarity</b></a></h3>
+						<p>A content-based recommendation system. The project features an interactive Streamlit interface, visualizations, and a machine learning engine for personalized job recommendations.</p>
+						<p>This system matches job seekers to suitable roles based on job descriptions, helping users find relevant positions efficiently. The model utilizes text processing techniques like TF-IDF and uses cosine similarity to recommend similar roles.</p>
+					</div>
+				</div>
+				
+
+				</div>
+	  
+			  
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Muneeza4/Resume_Category_Prediction" class="block-20 zoom-effect" style="background-image: url('images/proj_0.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+		
+						  <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;" ><a href="https://github.com/Muneeza4/Resume_Category_Prediction" style="color: inherit;"><b>Resume Category Prediction with Machine Learning</b></a></h3>
+						  <p>I developed a web app using Streamlit that predicts resume categories based on their content, aimed at helping recruiters automate resume classification, and Plotly.</p>
+		  
+				  <p>I developed an interactive UI for instant resume category predictions using NLP techniques like tokenization and lemmatization. I trained a KNN classifier with TF-IDF vectorization and deployed the model in a Streamlit app. This project showcases my skills in NLP, machine learning, and interactive web applications using Python and relevant libraries.</p></p>
+						</div>
+					  </div>
+					
+				</div>
+	  
+			  
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+					<a href="https://credit-card-revenue-prediction-app.streamlit.app/" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+	  
+					  <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;" ><a href="https://credit-card-revenue-prediction-app.streamlit.app/" style="color: inherit;"><b> Credit Card Revenue Prediction using Python and Machine Learning!</b> </a></h3>
+					  <p>I analyzed customer data from a PostgreSQL database to uncover insights and predict revenue based on demographics.</p>
+					  <p>Key highlights include:  Visualizing revenue by expense type with Plotly Treemap Identifying top states by total revenue, average annual fees by age group.<p> Predicting revenue using a Random Forest Regressor model.</p></p>
+					  <!-- <p>This project showcases my skills in Python, Pandas, Matplotlib, Plotly, seaborn, and Machine Learning with scikit-learn.</p> -->
+					</div>
+				  </div>
+				</div>
+	  
+			  
+				<div class="col-md-4 d-flex ftco-animate">
+		  <div class="blog-entry">
+			  <a href="https://github.com/Muneeza4/Data-Analysis-/blob/main/Excel%20data%20analysis.xlsx" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg'); background-size: cover; background-position: center;">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+				  <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;" ><a href="https://github.com/Muneeza4/Data-Analysis-/blob/main/Excel%20data%20analysis.xlsx" style="color: inherit;"><b>Market Sales Analysis Dashboard In Excel</b></a></h3>
+				  <p>Tool used: Excel</p>
+				  <p><strong>Key Visualizations:</strong> Sales trends by category, month, channel, and gender, providing insights into customer demographics, sales patterns, and regional performance for data-driven decision-making. This analysis highlighted key trends, optimizing marketing and inventory strategies.</p>
+	  
+			  </div>
+		  </div>
+	  </div>
+	  
+	  
+	  
+		  <div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+					  <a href="https://github.com/Muneeza4/Super_Market_Sales_Analysis_Power-Bi-Project" class="block-20 zoom-effect" style="background-image: url('images/proj_4.png');">
+					  </a>
+					  <div class="text mt-3 float-right d-block">
+						<h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
+							<a href="https://github.com/Muneeza4/Power-Bi-Project/tree/main/Super-Market-Sales-Analysis-main/Super-Market-Sales-Analysis-main" style="color: inherit;"><b>Super Market Sales Analysis</b></a>
+						</h3>
+						<p>Tools Used: Power BI</p>
+						
+						<p><strong>Project Overview:</strong> Analyzed and visualized supermarket sales data with key features including cards displaying the sum of quantity, sales, and shipped orders. Implemented year slicers for dynamic filtering. Key visualizations included sales distribution across different markets and detailed profit analysis by product categories and sub-categories.</p>
+	  
+					  </div>
+				
+						 </div>
+				</div>
+	  
+			  
+	  
+			<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+					  <a href="https://github.com/Muneeza4/Credit_Card_Analysis_PowerBi_Dashboard" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+					  </a>
+					  <div class="text mt-3 float-right d-block">
+		
+						<h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;" ><a href="https://github.com/Muneeza4/Power-Bi-Project/tree/main/Credit%20Card%20Financial%20Dashboard" style="color: inherit;"><b>Credit Card Analysis</b></a></h3>
+						<p>Tools Used: PostgreSQL, Power BI</p>
+						<p><strong>Project Overview:</strong> Dashboard for analyzing credit card sales data with key features such as data integration from PostgreSQL to Power BI, and revenue calculations consistent with Python results. Visualizations include revenue trends over time, key sales metrics like total sales, average transaction value, and customer segmentation, along with dynamic filters for deeper insights and analysis.</p>
+	  
+					  </div>
+				
+				 </div>
+	  
+			 </div>
+			</div>
+		 </div>
+	  </section>
+
+	
+	  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h2 class="mb-4" style="color: #4E3629; font-family: 'Lora', serif;">Contact Me</h2>
+			  <p>Below are the details to reach out to me!</p>
+			</div>
+		  </div>
+  
+		  <div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-map-signs"></span>
+					</div>
+					<h3 class="mb-4" style="color:  #4E3629;">Address</h3>
+				  <p style="color: #AB886D;" >Multan, Pakistan</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-phone2"></span>
+					</div>
+					<h3 class="mb-4" style="color:  #4E3629;">Contact Number</h3>
+					<p style="color: #AB886D;"><a href="tel://03290314424" style="color: #AB886D; text-decoration: none;">0329-0314424</a></p>
+					
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-paper-plane"></span>
+					</div>
+					<h3 class="mb-4" style="color:  #4E3629;">Email Address</h3>
+					<p><a href="mailto:muneezamehboob3@gmail.com" style="color: #AB886D; text-decoration: none;">muneezamehboob3@gmail.com</a></p>
+
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-globe"></span>
+					</div>
+					<h3 class="mb-4" style="color: #4E3629;">Download Resume</h3>
+
+				  <p><a href="https://drive.google.com/file/d/1p15vONBnORFq_fbI9eE__x9QHa1oxMU3/view?usp=sharing" style="color: #AB886D; text-decoration: none;">Click Here</a></p>
+				</div>
+			</div>
+  
+	 </div>
+   </section>
+  
+  
+   
+	  
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  
+  
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	
+	<script src="js/main.js"></script>
+	  
+	</body>
+  </html>
