@@ -4,83 +4,115 @@
     <title>Muneeza Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+
     <link rel="stylesheet" href="css/aos.css">
+
     <link rel="stylesheet" href="css/ionicons.min.css">
+    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
-      body {
-        background-color: #f0f4f8;
-        color: #1f2a40;
-        font-family: 'Poppins', sans-serif;
-      }
-      .navbar {
-        background-color: #1f2a40;
-      }
-      .navbar .nav-link span {
-        color: #f8f9fa !important;
-      }
-      .btn-primary {
-        background-color: #1f2a40;
-        border: none;
-      }
-      .btn-primary:hover {
-        background-color: #344966;
-      }
-      .btn-outline-white {
-        border-color: #1f2a40;
-        color: #1f2a40;
-      }
-      .btn-outline-white:hover {
-        background-color: #1f2a40;
-        color: #ffffff;
-      }
-      h1, h2, h3, h4, h5 {
-        font-family: 'Lora', serif;
-        color: #1f2a40;
-      }
-      p, li {
-        color: #4b5b6b;
-      }
-      #typing-animation {
-        font-size: 30px;
-        font-weight: bold;
-        color: #0a2463;
-        animation: typing 3s steps(20, end) infinite;
-      }
-      @keyframes typing {
-        from { width: 0; }
-        to { width: 100%; }
-      }
-      .resume-wrap {
-        border-left: 3px solid #0a2463;
-        padding-left: 20px;
-        margin-bottom: 30px;
-      }
-      .resume-wrap span.date {
-        font-weight: bold;
-      }
-      .zoom-effect:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s ease-in-out;
-      }
-      .underline {
-        width: 100px;
-        height: 4px;
-        background-color: #0a2463;
-        margin-top: -15px;
-        margin-bottom: 30px;
-      }
-    </style>
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #54473F;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0a2463;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
   </head>
 
 
