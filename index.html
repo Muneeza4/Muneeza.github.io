@@ -25,9 +25,8 @@
 
 
 <style>
-
 /*======================================
-//--//-->   ABOUT
+// ABOUT SECTION
 ======================================*/
 
 .about-mf .box-shadow-full {
@@ -43,9 +42,8 @@
   margin-left: 10px;
 }
 
-
+/* Skills progress bars */
 .skill-mf .progress {
-  /* background-color: #cde1f8; */
   margin: .5rem 0 1.2rem 0;
   border-radius: 0;
   height: .7rem;
@@ -56,13 +54,12 @@
   background-color:  #f7f4f2;
 }
 
-
 /* Animation styles */
 #typing-animation {
   position: relative;
   font-size: 30px;
   font-weight: bold;
-  color: #280c85;
+  color: #0B1E63; /* Dark Blue for animated text */
   overflow: hidden;
   white-space: nowrap;
   animation: typing 3s steps(20, end) infinite;
@@ -70,7 +67,6 @@
 
 #typing-animation:before {
   content: "";
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 0;
@@ -80,26 +76,16 @@
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 @keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
+  from { width: 5px; }
+  to { width: 0; }
 }
 
-
-/* project image zoom effect */
-
+/* Project image zoom effect */
 .zoom-effect {
   overflow: hidden;
   transition: transform 0.3s ease-out;
@@ -109,12 +95,23 @@
   transform: scale(1.1);
 }
 
+/* Button styles */
+.btn-primary, .btn-white {
+  background-color: #87CEEB !important; /* Sky Blue background */
+  color: #FFFFFF !important; /* White text */
+  border: none;
+}
 
+/* All headings and text */
+h1, h2, h3, h4, h5, h6, p, span, a {
+  color: #0B1E63 !important; /* Dark Blue for all text */
+}
+
+.subheading {
+  color: #0B1E63 !important;
+}
 </style>
-
-
-  </head>
-
+</head>
 
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #F1F0E8;">
@@ -195,9 +192,9 @@
 					
 			            
 
-			            <p><a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" class="btn btn-primary py-3 px-4" style="color: #4E3629 !important;" >linkedin</a> 
-<!-- 							<a href="https://github.com/Muneeza4" class="btn btn-white btn-outline-white py-3 px-4" style="color: #4E3629 !important;" >GitHub</a> -->
-							<a href="https://www.kaggle.com/muneeza3" class="btn btn-white btn-outline-white py-3 px-4" style="color: #4E3629 !important;" >Kaggle</a>
+			            <p><a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" class="btn btn-primary py-3 px-4" !important;" >linkedin</a> 
+<!-- 							<a href="https://github.com/Muneeza4" class="btn btn-white btn-outline-white py-3 px-4" !important;" >GitHub</a> -->
+							<a href="https://www.kaggle.com/muneeza3" class="btn btn-white btn-outline-white py-3 px-4" !important;" >Kaggle</a>
 						
 						</p>
 		            </div>
