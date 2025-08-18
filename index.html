@@ -24,7 +24,6 @@
 
 
 
-<style>
 /*======================================
 // ABOUT SECTION
 ======================================*/
@@ -51,7 +50,7 @@
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
-  background-color:  #f7f4f2;
+  background-color: #f7f4f2;
 }
 
 /* Animation styles */
@@ -95,24 +94,47 @@
   transform: scale(1.1);
 }
 
-/* Button styles */
+/* Buttons */
 .btn-primary, .btn-white {
-  background-color: #87CEEB !important; /* Sky Blue background */
-  color: #FFFFFF !important; /* White text */
+  background-color: #FFFFFF !important; /* White default */
+  color: #0B1E63 !important; /* Dark Blue text */
   border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-white:hover {
+  background-color: #B3E5FC !important; /* Light sky blue on hover */
+  color: #0B1E63 !important; /* Dark Blue text */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: #FFFFFF !important; /* White default */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #B3E5FC !important; /* Light sky blue on hover */
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link:active {
+    color: #FFFFFF !important; /* White active/clicked link */
+}
+
+.navbar-nav .nav-item:not(.active) .nav-link {
+    color: #0B1E63 !important; /* Dark Blue inactive */
 }
 
 /* All headings and text */
-/* All headings and subheadings */
 h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
     color: #0B1E63 !important; /* Dark Blue */
 }
 
-
 .subheading {
   color: #0B1E63 !important;
 }
-</style>
+
 </head>
 
 
