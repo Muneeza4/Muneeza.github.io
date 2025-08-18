@@ -94,18 +94,28 @@
   transform: scale(1.1);
 }
 
-/* Buttons */
+/* Buttons default */
 .btn-primary, .btn-white {
   background-color: #FFFFFF !important; /* White default */
   color: #0B1E63 !important; /* Dark Blue text */
-  border: none;
+  border: none !important;
   transition: all 0.3s ease;
 }
 
-.btn-primary:hover, .btn-white:hover {
-  background-color: #B3E5FC !important; /* Light sky blue on hover */
+/* Buttons hover */
+.btn-primary:hover, .btn-white:hover,
+.btn-primary:focus, .btn-white:focus,
+.btn-primary:active, .btn-white:active {
+  background-color: #D6F6FF !important; /* Pastel sky blue */
   color: #0B1E63 !important; /* Dark Blue text */
+  border: none !important;
+  box-shadow: none !important; /* remove Bootstrap glow */
 }
+
+
+
+
+	
 
 /* Navbar links */
 .navbar-nav .nav-link {
