@@ -117,23 +117,25 @@
 
 	
 
-/* Navbar links */
+/* Navbar background always white */
+.navbar {
+  background-color: #FFFFFF !important; /* White background */
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar links styling */
 .navbar-nav .nav-link {
-    color: #FFFFFF !important; /* White default */
+    color: #0B1E63 !important; /* Dark Blue text default */
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #B3E5FC !important; /* Light sky blue on hover */
+    color: #87CEEB !important; /* Sky blue text hover */
 }
 
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-link:active {
-    color: #FFFFFF !important; /* White active/clicked link */
-}
-
-.navbar-nav .nav-item:not(.active) .nav-link {
-    color: #0B1E63 !important; /* Dark Blue inactive */
+    color: #0B1E63 !important; /* Keep active link dark blue */
 }
 
 /* All headings and text */
@@ -144,6 +146,20 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 .subheading {
   color: #0B1E63 !important;
 }
+	
+/* Hero Section (Hello / I am Muneeza) */
+.hero {
+  background-color: #FFFFFF !important; /* Same as page background */
+  background-image: none !important;    /* Remove any extra bg image */
+  box-shadow: none !important;          /* Remove shadow if applied */
+}
+
+.hero .container,
+.hero .row,
+.hero .content {
+  background: transparent !important; /* Remove inner background blocks */
+}
+	
 </style>
 </head>
 
