@@ -6,10 +6,6 @@
  */
 :root {
   --blue: #007bff;
-  --primary: #87CEEB;   /* Sky Blue */
-  --blue: #0B1E63;      /* Dark Blue for text */
-  --light-sky: #D6F6FF; /* Light pastel sky blue */
-  --white: #ffffff;     /* White *
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -263,38 +259,6 @@ input[type="month"] {
 textarea {
   overflow: auto;
   resize: vertical; }
-
-  /* ==== Custom Button Override (bootstrap ke neeche add karo) ==== */
-
-/* Default button look */
-button,
-[type="button"],
-[type="submit"] {
-  background-color: #ffffff !important;   /* White background */
-  color: #003366 !important;              /* Dark blue text */
-  border: 2px solid #87CEEB !important;   /* Sky blue border */
-  border-radius: 0.3rem;
-  padding: 0.5rem 1rem;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Hover effect */
-button:hover,
-[type="button"]:hover,
-[type="submit"]:hover {
-  background-color: #D6F6FF !important;   /* Light pastel sky blue */
-  color: #003366 !important;              /* Dark blue text */
-  border-color: #87CEEB !important;
-}
-
-/* Focus state */
-button:focus,
-[type="button"]:focus,
-[type="submit"]:focus {
-  outline: none !important;
-  box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.5) !important;
-}
 
 fieldset {
   min-width: 0;
