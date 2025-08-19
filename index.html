@@ -25,38 +25,52 @@
 
 <style>
 /*======================================
-ABOUT SECTION
+GENERAL STYLES
 ======================================*/
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+body {
+    font-family: 'Lora', serif;
+    background-color: #F1F0E8;
+    color: #0B1E63;
+    margin: 0;
+    padding: 0;
 }
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
+h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
+    color: #0B1E63 !important;
 }
 
-.about-mf .about-img img {
-  margin-left: 10px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
+/* Subheading responsive */
+.subheading {
+  font-size: clamp(1rem, 2vw + 0.5rem, 2rem);
 }
 
-/* Skills progress bars */
-.skill-mf .progress {
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
+/*======================================
+NAVBAR
+======================================*/
+.navbar {
+  background-color: #0B1E63 !important;
 }
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #f7f4f2;
+.navbar-dark .navbar-nav .nav-link {
+  color: #FFFFFF !important;       /* White links */
+  text-decoration: none !important;
+  border-bottom: none !important;  /* Remove underline */
 }
 
-/* Animation styles */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+  color: #FFFFFF !important;       /* Keep white on hover & active */
+}
+
+.navbar-dark .navbar-toggler {
+  color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
+
+/*======================================
+HERO / TYPING ANIMATION
+======================================*/
 #typing-animation {
   position: relative;
   font-size: 30px;
@@ -80,65 +94,6 @@ ABOUT SECTION
 @keyframes typing { from { width: 0; } to { width: 100%; } }
 @keyframes typing-cursor { from { width: 5px; } to { width: 0; } }
 
-/* Project image zoom effect */
-.zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; }
-.zoom-effect:hover { transform: scale(1.1); }
-
-/* Buttons default */
-.btn-primary, .btn-white {
-  background-color: #FFFFFF !important; /* White default */
-  color: #0B1E63 !important;           /* Dark Blue text */
-  border: 2px solid #0B1E63 !important; /* Outline dark blue */
-  border-radius: 0;
-  transition: all 0.3s ease;
-}
-
-/* Buttons hover / focus / active */
-.btn-primary:hover, .btn-white:hover,
-.btn-primary:focus, .btn-white:focus,
-.btn-primary:active, .btn-white:active {
-  background-color: #D6F6FF !important; /* Light pastel sky blue */
-  color: #0B1E63 !important;
-  box-shadow: none !important;          /* remove Bootstrap glow */
-}
-
-/* Navbar styling */
-.navbar {
-  background-color: #0B1E63 !important; /* Dark blue background */
-  transition: background-color 0.3s ease;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #FFFFFF !important;  /* white default text */
-  text-decoration: none !important;
-  border-bottom: none !important; /* remove underline/yellow line */
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus {
-  color: #FFFFFF !important; /* keep hover white */
-}
-
-.navbar-dark .navbar-nav .nav-item.active .nav-link,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #FFFFFF !important; /* active remains white */
-}
-
-.navbar-dark .navbar-toggler {
-  color: #FFFFFF !important;  /* Toggler icon white */
-  border-color: #FFFFFF !important;
-}
-
-/* All headings and text */
-h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
-    color: #0B1E63 !important;
-}
-
-.subheading {
-  color: #0B1E63 !important;
-  font-size: clamp(1rem, 2vw + 0.5rem, 2rem); /* responsive font size */
-}
-
 /* Hero Section adjustments */
 .hero {
   background-color: #F1F0E8 !important;
@@ -146,11 +101,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
   box-shadow: none !important;
 }
 
-.hero .container,
-.hero .row,
-.hero .content {
-  background: transparent !important;
-}
 .hero img {
   width: 100%;
   height: auto;
@@ -158,61 +108,67 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
   display: block;
 }
 
-/* Horizontal Project Card */
-.blog-entry {
-  display: flex;
-  flex-wrap: wrap; /* allows stacking on small screens */
-  border: 2px solid #e0c9a6;
+/*======================================
+BUTTONS
+======================================*/
+.btn-primary, .btn-white {
+  background-color: #FFFFFF !important;
+  color: #0B1E63 !important;          /* Dark blue text */
+  border: 2px solid #0B1E63 !important;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-white:hover,
+.btn-primary:focus, .btn-white:focus,
+.btn-primary:active, .btn-white:active {
+  background-color: #D6F6FF !important; /* Light pastel blue */
+  color: #0B1E63 !important;
+  box-shadow: none !important;
+}
+
+/*======================================
+PROJECT / EDUCATION CARDS
+======================================*/
+.resume-wrap {
+  border: 1px solid #e0c9a6;
   border-radius: 10px;
   padding: 20px;
   background-color: #fff;
+  margin-bottom: 20px;
 }
 
-.blog-entry .ProjectPoster {
-  width: 100%;
-  max-width: 40%;
-  height: 300px;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex-shrink: 0;
-}
-
-.blog-entry .text {
-  width: 100%;
-  max-width: 60%;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.blog-entry .text h3.heading {
+.resume-wrap h2, .resume-wrap h3 {
   color: #4E3629;
   margin-bottom: 1rem;
 }
 
-.blog-entry .text p {
+.resume-wrap span.date {
+  color: #AB886D;
+}
+
+.resume-wrap p {
   text-align: justify;
   margin-bottom: 0.8rem;
 }
 
-/* Responsive adjustments */
+/* Projects responsive */
+.row.projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.row.projects-row .col-md-6 {
+  flex: 0 0 48%;
+}
+
 @media (max-width: 768px) {
-  .blog-entry {
-    flex-direction: column;
-  }
-  .blog-entry .ProjectPoster,
-  .blog-entry .text {
-    max-width: 100%;
-    padding-left: 0;
-  }
-  .blog-entry .ProjectPoster {
-    height: 250px;
-    margin-bottom: 15px;
+  .row.projects-row .col-md-6 {
+    flex: 0 0 100%;
   }
 }
+
 
 
 
