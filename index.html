@@ -23,11 +23,10 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-<style> 
+<style>
 /*======================================
-// ABOUT SECTION
+ABOUT SECTION
 ======================================*/
-
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -39,6 +38,10 @@
 
 .about-mf .about-img img {
   margin-left: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 /* Skills progress bars */
@@ -58,7 +61,7 @@
   position: relative;
   font-size: 30px;
   font-weight: bold;
-  color: #0B1E63; /* Dark Blue for animated text */
+  color: #0B1E63;
   overflow: hidden;
   white-space: nowrap;
   animation: typing 3s steps(20, end) infinite;
@@ -74,91 +77,144 @@
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes typing-cursor {
-  from { width: 5px; }
-  to { width: 0; }
-}
+@keyframes typing { from { width: 0; } to { width: 100%; } }
+@keyframes typing-cursor { from { width: 5px; } to { width: 0; } }
 
 /* Project image zoom effect */
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
+.zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; }
+.zoom-effect:hover { transform: scale(1.1); }
 
 /* Buttons default */
 .btn-primary, .btn-white {
   background-color: #FFFFFF !important; /* White default */
-  color: #0B1E63 !important; /* Dark Blue text */
-  border: none !important;
+  color: #0B1E63 !important;           /* Dark Blue text */
+  border: 2px solid #0B1E63 !important; /* Outline dark blue */
+  border-radius: 0;
   transition: all 0.3s ease;
 }
 
-/* Buttons hover */
+/* Buttons hover / focus / active */
 .btn-primary:hover, .btn-white:hover,
 .btn-primary:focus, .btn-white:focus,
 .btn-primary:active, .btn-white:active {
-  background-color: #D6F6FF !important; /* Pastel sky blue */
-  color: #0B1E63 !important; /* Dark Blue text */
-  border: none !important;
-  box-shadow: none !important; /* remove Bootstrap glow */
+  background-color: #D6F6FF !important; /* Light pastel sky blue */
+  color: #0B1E63 !important;
+  box-shadow: none !important;          /* remove Bootstrap glow */
 }
 
-
-
-/* Navbar background always white */
+/* Navbar styling */
 .navbar {
-  background-color: #FFFFFF !important; /* White background */
+  background-color: #0B1E63 !important; /* Dark blue background */
   transition: background-color 0.3s ease;
 }
 
-/* Navbar links styling */
-.navbar-nav .nav-link {
-    color: #0B1E63 !important; /* Dark Blue text default */
-    transition: color 0.3s ease;
+.navbar-dark .navbar-nav .nav-link {
+  color: #FFFFFF !important; /* white default text */
 }
 
-.navbar-nav .nav-link:hover {
-    color: #87CEEB !important; /* Sky blue text hover */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #87CEEB !important; /* sky blue on hover */
 }
 
-.navbar-nav .nav-item.active .nav-link,
-.navbar-nav .nav-link:active {
-    color: #0B1E63 !important; /* Keep active link dark blue */
+.navbar-dark .navbar-nav .nav-item.active .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #FFFFFF !important; /* active remains white */
+}
+
+.navbar-dark .navbar-toggler {
+  color: #FFFFFF !important;  /* Toggler icon white */
+  border-color: #FFFFFF !important;
 }
 
 /* All headings and text */
 h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
-    color: #0B1E63 !important; /* Dark Blue */
+    color: #0B1E63 !important;
 }
 
 .subheading {
   color: #0B1E63 !important;
-  font-size: 2rem; 
+  font-size: clamp(1rem, 2vw + 0.5rem, 2rem); /* responsive font size */
 }
-	
-/* Hero Section (Hello / I am Muneeza) */
+
+/* Hero Section adjustments */
 .hero {
-  background-color: #FFFFFF !important; /* Same as page background */
-  background-image: none !important;    /* Remove any extra bg image */
-  box-shadow: none !important;          /* Remove shadow if applied */
+  background-color: #F1F0E8 !important;
+  background-image: none !important;
+  box-shadow: none !important;
 }
 
 .hero .container,
 .hero .row,
 .hero .content {
-  background: transparent !important; /* Remove inner background blocks */
+  background: transparent !important;
 }
-	
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Horizontal Project Card */
+.blog-entry {
+  display: flex;
+  flex-wrap: wrap; /* allows stacking on small screens */
+  border: 2px solid #e0c9a6;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.blog-entry .ProjectPoster {
+  width: 100%;
+  max-width: 40%;
+  height: 300px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.blog-entry .text {
+  width: 100%;
+  max-width: 60%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-entry .text h3.heading {
+  color: #4E3629;
+  margin-bottom: 1rem;
+}
+
+.blog-entry .text p {
+  text-align: justify;
+  margin-bottom: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-entry {
+    flex-direction: column;
+  }
+  .blog-entry .ProjectPoster,
+  .blog-entry .text {
+    max-width: 100%;
+    padding-left: 0;
+  }
+  .blog-entry .ProjectPoster {
+    height: 250px;
+    margin-bottom: 15px;
+  }
+}
+
+
 </style>
+
 </head>
 
 
@@ -426,24 +482,23 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 
         <div class="row d-flex">
 
- <!-- FYP Project - Horizontal Card -->
-  <div class="col-md-12 d-flex ftco-animate mb-5">
-    <div class="blog-entry d-md-flex align-items-center w-100" style="border: 2px solid #e0c9a6; border-radius: 10px; padding: 20px; background-color: #fff;">
-      
-      <!-- Image side -->
-      <div class="Project Poster" style="background-image: url('images/FYPposter.jpg'); background-size: cover; width: 40%; height: 300px; border-radius: 10px;">
-      </div>
-
-      <!-- Text side -->
-      <div class="text d-flex flex-column justify-content-center pl-md-5 mt-md-0 mt-4" style="width: 60%;">
-        <h3 class="heading" style="color: #4E3629;"><b>Genomic Selection for Wheat Trait Prediction</b></h3>
-        <p style="text-align: justify;">This Project focuses on using <strong>genomic selection</strong> techniques to predict key traits in wheat, such as yield and plant height, using genotype and phenotype data. We implemented various <strong>machine learning models</strong> including Random Forest, XGBoost to select the most important SNPs (genetic markers) for accurate trait prediction.</p>
-        <p style="text-align: justify;">Tools used include Python, Pandas, Scikit-learn, Matplotlib, Pyplot, Seaborn, Beagle, Plink. The model pipeline includes <strong>data cleaning, feature selection using GWAS and ML, imputation using Beagle, and performance comparison</strong> across models.</p>
-       <p><a href = "https://muneeza4.github.io/Genomic_Selection_for_Resilient_Crop_Breeding_in_South-Punjab/" class="btn btn-primary py-2 px-4" style="color: #4E3629 !important;">View Project</a></p> 
-      </div>
-
+ <div class="col-md-12 d-flex ftco-animate mb-5">
+  <div class="blog-entry w-100">
+    
+    <!-- Image side -->
+    <div class="ProjectPoster" style="background-image: url('images/FYPposter.jpg');">
     </div>
+
+    <!-- Text side -->
+    <div class="text">
+      <h3 class="heading"><b>Genomic Selection for Wheat Trait Prediction</b></h3>
+      <p>This Project focuses on using <strong>genomic selection</strong> techniques to predict key traits in wheat, such as yield and plant height, using genotype and phenotype data. We implemented various <strong>machine learning models</strong> including Random Forest, XGBoost to select the most important SNPs (genetic markers) for accurate trait prediction.</p>
+      <p>Tools used include Python, Pandas, Scikit-learn, Matplotlib, Pyplot, Seaborn, Beagle, Plink. The model pipeline includes <strong>data cleaning, feature selection using GWAS and ML, imputation using Beagle, and performance comparison</strong> across models.</p>
+      <p><a href="https://muneeza4.github.io/Genomic_Selection_for_Resilient_Crop_Breeding_in_South-Punjab/" class="btn btn-primary py-2 px-4" style="color: #4E3629 !important;">View Project</a></p>
+    </div>
+
   </div>
+</div>
 
         <div class="row d-flex">
 		
