@@ -149,8 +149,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 
 </head>
 
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #FFFFFF;">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #FFFFFF;">
 
 	  
 	  
@@ -165,101 +164,127 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 
 
 
+<section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
 
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Muneeza</span></h1>
+        <!-- Slider Item -->
+        <div class="slider-item">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+                    <!-- Background Image -->
+                    <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+                        <div class="overlay"></div>
+                    </div>
 
-						<script>
+                    <!-- Text Content -->
+                    <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                        <div class="text">
+                            <span class="subheading">Hello!</span>
+                            <h1 class="mb-4 mt-3">I'm <span>Muneeza</span></h1>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+                            <!-- Typing Animation -->
+                            <span id="typing-animation"></span>
+                            <script>
+                                const typingAnimationElement = document.getElementById('typing-animation');
+                                const typingTexts = ['Data Scientist', 'Data Analyst', 'Machine Learning'];
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Scientist  ',
-						'Data Analyst  ',
-						'Machine Learning  ',
-						];
+                                function playTypingAnimation(text) {
+                                    for (let i = 0; i < text.length; i++) {
+                                        setTimeout(() => {
+                                            typingAnimationElement.textContent += text[i];
+                                        }, i * 200);
+                                    }
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+                                    setTimeout(() => {
+                                        typingAnimationElement.textContent = '';
+                                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                                    }, text.length * 200);
+                                }
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+                                playTypingAnimation(typingTexts[0]);
+                            </script>
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+                            <br><br>
 
-						</script>
+                            <!-- Buttons -->
+                            <p>
+                                <a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" class="btn-custom">
+                                    LinkedIn
+                                </a>
+                                <a href="https://www.kaggle.com/muneeza3" class="btn-custom">
+                                    Kaggle
+                                </a>
+                            </p>
+                        </div>
+                    </div>
 
-						<br>
-						<br>
+                </div>
+            </div>
+        </div>
+        <!-- End of Slider Item -->
 
-					
-			            
+    </div>
+</section>
 
-			            <p><a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" class="btn btn-primary py-3 px-4" 
-                            style="color: #0B1E63 !important; background-color: #FFFFFF !important; border: none !important; text-decoration: none !important;">LinkedIn </a> 
+<!-- Custom CSS for Buttons -->
+<style>
+    .btn-custom {
+        color: #0B1E63 !important;
+        background-color: #FFFFFF !important;
+        border: 2px solid #0B1E63 !important;
+        padding: 12px 25px;
+        font-weight: 500;
+        text-decoration: none !important;
+        transition: all 0.3s ease;
+        margin-right: 10px;
+        border-radius: 4px;
+    }
 
-							<a href="https://www.kaggle.com/muneeza3" class="btn btn-white btn-outline-white py-3 px-4" 
-                            style="color: #0B1E63 !important; background-color: #FFFFFF !important; border: none !important; text-decoration: none !important;">Kaggle</a>
-						</p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
+    .btn-custom:hover,
+    .btn-custom:focus,
+    .btn-custom:active {
+        color: #0B1E63 !important;
+        background-color: #FFFFFF !important;
+        border-color: #0B1E63 !important;
+        text-decoration: none !important;
+    }
+</style>
 
-<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-		<div class="row justify-content-start pb-3">
-<div class="col-md-12 heading-section ftco-animate">
-    <h2 class="mb-4" style="color: #FFFFFF; font-family: 'Lora', serif;">About Me</h2>
 
-    <p>Hi there! I'm Muneeza, a Data Science with a strong interest in machine learning and deep learning. I have skills in Python, SQL, machine learning and deep learning algorithms, and Power BI, and I'm actively working on projects related to machine learning and data analysis.</p>
-    <p>Through hands-on projects and self-directed learning, I'm exploring the intricacies of data science and machine learning, seeking to understand how data-driven insights and predictive models can drive meaningful change in various domains. From manipulating datasets and extracting valuable information to crafting compelling visualizations and building machine learning models, I'm constantly pushing myself to learn and grow in this dynamic field.</p>
-    
-    <h3 class="mt-4" style="color: #4E3629; font-family: 'Lora', serif;">Skills</h3>
-    <ul class="about-info mt-4 px-md-0 px-2">
-        <li><strong>Programming Languages:</strong> &nbsp;Python, SQL</li>
-        <li><strong>Tools & Technologies:</strong> &nbsp;Power BI, Jupyter, Excel, GitHub</li>
-        <li><strong>Data Visualization:</strong> &nbsp; Matplotlib, Seaborn, Plotly</li>
-        <li><strong>Machine Learning & Data Science:</strong> &nbsp; Pandas, NumPy, Scikit-learn, Tensorflow, Pytorch, Joblib</li>
-        <li><strong>Deep Learning:</strong> &nbsp; ANN, RNN, CNN, Transformers, LSTMS, GRU, Computer Vision</li>
-        <li><strong>NLP & Text Analytics:</strong> &nbsp;NLTK, Bag of Words, TFIDF, Text Preprocessing</li>
-        <li><strong>Data Analysis:</strong> &nbsp;Data Cleaning, Exploratory Data Analysis (EDA), Feature Engineering</li>
-        <li><strong>Statistics:</strong> &nbsp;Statistical Analysis</li>
-    </ul>
+<div class="col-md-6 col-lg-7 pl-lg-5 pb-5" style="margin-left: 10px;"> <!-- Added slight left margin -->
+
+    <div class="row justify-content-start pb-3">
+
+        <div class="col-md-12 heading-section ftco-animate">
+            <h2 class="mb-4" style="color: #FFFFFF; font-family: 'Lora', serif;">About Me</h2>
+
+            <p>
+                Hi there! I'm Muneeza, a Data Scientist with a strong interest in machine learning and deep learning. I have skills in Python, SQL, machine learning and deep learning algorithms, and Power BI, and I'm actively working on projects related to machine learning and data analysis.
+            </p>
+
+            <p>
+                Through hands-on projects and self-directed learning, I'm exploring the intricacies of data science and machine learning, seeking to understand how data-driven insights and predictive models can drive meaningful change in various domains. From manipulating datasets and extracting valuable information to crafting compelling visualizations and building machine learning models, I'm constantly pushing myself to learn and grow in this dynamic field.
+            </p>
+
+            <h3 class="mt-4" style="color: #4E3629; font-family: 'Lora', serif;">Skills</h3>
+
+            <ul class="about-info mt-4 px-md-0 px-2">
+                <li><strong>Programming Languages:</strong> &nbsp;Python, SQL</li>
+                <li><strong>Tools & Technologies:</strong> &nbsp;Power BI, Jupyter, Excel, GitHub</li>
+                <li><strong>Data Visualization:</strong> &nbsp;Matplotlib, Seaborn, Plotly</li>
+                <li><strong>Machine Learning & Data Science:</strong> &nbsp;Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Joblib</li>
+                <li><strong>Deep Learning:</strong> &nbsp;ANN, RNN, CNN, Transformers, LSTMs, GRU, Computer Vision</li>
+                <li><strong>NLP & Text Analytics:</strong> &nbsp;NLTK, Bag of Words, TFIDF, Text Preprocessing</li>
+                <li><strong>Data Analysis:</strong> &nbsp;Data Cleaning, Exploratory Data Analysis (EDA), Feature Engineering</li>
+                <li><strong>Statistics:</strong> &nbsp;Statistical Analysis</li>
+            </ul>
+        </div>
+
+    </div>
 </div>
 
-
-
-		</div>
 
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
@@ -285,129 +310,157 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
           Python, SQL, Excel, and Power BI, adept at transforming complex data into actionable insights and visually
           compelling dashboards.
         </p>
+
+        <!-- Text and button in one div -->
+        <div class="mt-4">
+          <p style="margin-bottom: 10px;">Check out my CV for detailed experience and projects:</p>
+          <a href="https://drive.google.com/file/d/1gXyg7dZe7k1e-IyYVkuB0_-8IOvbBuvJ/view?usp=sharing" 
+             class="btn-custom">
+            Download CV
+          </a>
+        </div>
       </div>
     </div>
-
-    <div class="row justify-content-center mt-4">
-      <div class="col-md-6 text-center ftco-animate">
-        <a href="https://drive.google.com/file/d/1gXyg7dZe7k1e-IyYVkuB0_-8IOvbBuvJ/view?usp=sharing" 
-           class="btn btn-primary py-3 px-5" 
-           style="background-color: #FFFFFF; color: #0B1E63; border: none; text-decoration: none;">
-          Download CV
-        </a>
-      </div>
-    </div>
-
-    <div class="row mt-3"></div>
   </div>
+
+  <!-- Extra space after section -->
+<div style="height: 50px;"></div>
 </section>
+
+<!-- Custom CSS -->
+<style>
+  .btn-custom {
+    background-color: #FFFFFF;
+    color: #0B1E63;
+    border: 2px solid #0B1E63;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .btn-custom:hover,
+  .btn-custom:focus,
+  .btn-custom:active {
+    background-color: #FFFFFF; /* stays white */
+    color: #0B1E63; /* stays dark blue */
+    border-color: #0B1E63; /* stays dark blue */
+  }
+</style>
+
 	  
 
-	        <div class="row">
-		     <h1 class="big-4" style="color: #4E3629; font-family: 'Lora', serif;"><b>Certificates</b></h1>
-<!-- 		     <div class="underline"></div> -->
-	        </div>
-	        <br>
-	
-	        <div class="row">
+	<section class="ftco-section ftco-no-pb" id="certificates-education">
+    <div class="container" style="margin-left: 20px;"> <!-- Left margin added -->
 
-			    <div class="col-md-6">
-				  <div class="resume-wrap ftco-animate">
-				    <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Data Mining</span>
-					<h2 style="color: #AB886D; ">Issuing Organization: Great Learning</h2>
-					<p class="mt-4">
-					<P>Studied data mining techniques including classification, clustering, association, and anomaly detection, with a focus on extracting valuable insights from large datasets.</P>
-					</p>
-				  </div>
-			    </div>
+        <!-- Certificates Section -->
+        <div class="row">
+            <h1 class="big-4" style="color: #4E3629; font-family: 'Lora', serif;"><b>Certificates</b></h1>
+        </div>
+        <br>
 
-			    <div class="col-md-6">
-				    <div class="resume-wrap ftco-animate">
-					  <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Statistics for data science</span>
-					  <h2 style="color: #AB886D;">Issuing Organization: Simplilearn</h2>
-					  <p class="mt-4">Learned key statistical techniques like probability, hypothesis testing, and regression analysis, applied to data science problems for insightful decision-making.</p>
-					  
-					</p>
-			        </div>
-			    </div>
+        <div class="row">
+            <!-- Certificate 1 -->
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Data Mining</span>
+                    <h2 style="color: #AB886D;">Issuing Organization: Great Learning</h2>
+                    <p class="mt-4">
+                        Studied data mining techniques including classification, clustering, association, and anomaly detection, with a focus on extracting valuable insights from large datasets.
+                    </p>
+                </div>
+            </div>
 
+            <!-- Certificate 2 -->
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Statistics for Data Science</span>
+                    <h2 style="color: #AB886D;">Issuing Organization: Simplilearn</h2>
+                    <p class="mt-4">
+                        Learned key statistical techniques like probability, hypothesis testing, and regression analysis, applied to data science problems for insightful decision-making.
+                    </p>
+                </div>
+            </div>
 
-			    <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-					  <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Python</span>
-					  <h2 style="color: #AB886D;">Issuing Organization: Kaggle</h2>
-                      <p class="mt-4">
-					  <p>This certificate demonstrates my proficiency in Python, covering key areas such as syntax, data structures, and libraries like NumPy, Pandas, Matplotlib and Seaborn.</p>
-				    </div>
-				</div>
+            <!-- Certificate 3 -->
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Python</span>
+                    <h2 style="color: #AB886D;">Issuing Organization: Kaggle</h2>
+                    <p class="mt-4">
+                        Demonstrates proficiency in Python, covering syntax, data structures, and libraries like NumPy, Pandas, Matplotlib, and Seaborn.
+                    </p>
+                </div>
+            </div>
 
+            <!-- Certificate 4 -->
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Machine Learning Algorithms</span>
+                    <h2 style="color: #AB886D;">Issuing Organization: Great Learning</h2>
+                    <p class="mt-4">
+                        Gained deep insights and practical skills in various machine learning techniques and algorithms to solve real-world problems.
+                    </p>
+                </div>
+            </div>
 
-			    <div class="col-md-6">
-				   <div class="resume-wrap ftco-animate">
-                     <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Machine Learning Algorithms</span>
-                     <h2 style="color: #AB886D;">Issuing Organization: Great Learning</h2>
-					 <p class="mt-4">
-					 <p>This journey has been incredibly rewarding, providing me with deep insights and practical skills in various machine learning techniques and algorithms to solve problems.</p>
+            <!-- Certificate 5 -->
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Image Recognition using ML</span>
+                    <h2 style="color: #AB886D;">Issuing Organization: Simplilearn</h2>
+                    <p class="mt-4">
+                        Completed a course on image recognition using ML, gaining expertise in applying ML models for object classification and image analysis.
+                    </p>
+                </div>
+            </div>
 
-				    </div>
-				</div>
+            <!-- Certificate 6 -->
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Computer Vision</span>
+                    <h2 style="color: #AB886D;">Issuing Organization: Kaggle</h2>
+                    <p class="mt-4">
+                        Mastered tools and algorithms to enable machines to ‘see’ and understand the world, with practical skills in object detection and AI-driven visual analysis.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-			    <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-					  <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Image Recognition using ML</span>
-					  <h2 style="color: #AB886D;">Issuing Organization: Simplilearn</h2>
-                      <p class="mt-4">
-					  <p>Completed a course on image recognition using ML, gaining expertise in applying ML models and algorithms for object classification and image analysis.</p>
-				    </div>
-				</div>
+        <br><br>
 
-			    <div class="col-md-6">
-				   <div class="resume-wrap ftco-animate">
-                     <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">Computer Vision</span>
-                     <h2 style="color: #AB886D;">Issuing Organization: Kaggle</h2>
-					 <p class="mt-4">
-					 <p>Completed a Computer Vision certification, mastering tools and algorithms to enable machines to ‘see’ and understand the world, while developing practical skills in object detection, and AI-driven visual analysis.</p>
-				    </div>
-				</div>
-		</div>
+        <!-- Education Section -->
+        <div class="row">
+            <h1 class="big-4" style="color: #4E3629; font-family: 'Lora', serif;"><b>Education</b></h1>
+        </div>
+        <br>
 
+        <div class="row">
+            <!-- Education 1 -->
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">2021-2025</span>
+                    <h2 style="color: #AB886D;">Bachelor of Data Science</h2>
+                    <span class="position">MNS University of Agriculture, Multan</span>
+                    <p class="mt-4">CGPA: 3.96</p>
+                </div>
+            </div>
 
-<br>
-	<br>
+            <!-- Education 2 -->
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date" style="color: #AB886D; font-family: 'Lora', serif;">2019-2021</span>
+                    <h2 style="color: #AB886D;">Intermediate of Computer Science</h2>
+                    <span class="position">City College of Science and Commerce</span>
+                    <p class="mt-4">Grade: A+</p>
+                </div>
+            </div>
+        </div>
 
+    </div>
+</section>
 
-		<div class="row">
-			<h1 class="big-4" style="color: #4E3629; font-family: 'Lora', serif;"><b>Education</b></h1>
-<!-- 			<div class="underline"></div> -->
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date" style="color: #AB886D; font-family: 'Lora', serif;">2021-2025</span>
-    					<h2 style="color: #AB886D;" >Bachelor of Data Science</h2>
-    					<span class="position">MNS University of Agriculture, Multan.</span>
-    					<p class="mt-4">CGPA: 3.96</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date" style="color: #AB886D; font-family: 'Lora', serif;">2019-2021</span>
-    					<h2 style="color: #AB886D;">Intermediate of Computer Science</h2>
-    					<span class="position">City College of Science and Commerce</span>
-    					<p class="mt-4">Grade: A+</p>
-    				</div>
-				</div>
-    		</div>
-			
-
-    	</div>
-    </section>
-
-   
-
+	  
     <section class="ftco-section" id="project-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
