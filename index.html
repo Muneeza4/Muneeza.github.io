@@ -422,43 +422,42 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 
 <section class="projects-section" style="padding: 50px 15px; background-color: inherit;">
   <div class="col-md-12 d-flex ftco-animate mb-5">
-    <div class="blog-entry w-100" style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 20px;">
+    <div class="blog-entry w-100" style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 30px;">
 
-      <!-- Image side (LEFT) -->
+      <!-- Left: Image -->
       <div class="ProjectPoster" style="
-          flex: 1 1 65%;      /* wider image */
-          max-width: 65%;
+          flex: 1 1 60%;       /* wider image */
+          max-width: 60%;
           background-image: url('images/FYPposter.jpg'); 
-          background-size: contain; 
+          background-size: cover; 
           background-repeat: no-repeat; 
           background-position: center; 
-          min-height: 300px;
+          min-height: 350px;
           border-radius: 8px;">
       </div>
 
-      <!-- Text side (RIGHT) -->
+      <!-- Right: Text + Button -->
       <div class="text" style="
           flex: 1 1 35%;      /* narrower text */
           max-width: 35%;     
-          padding-left: 20px; 
           display: flex; 
           flex-direction: column; 
-          justify-content: center;">
-        
+          justify-content: flex-start;
+          gap: 15px;">
+
         <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif; font-size: 1.6rem;"><b>Genomic Selection for Wheat Trait Prediction</b></h3>
-        
+
         <p>This Project focuses on using <strong>genomic selection</strong> techniques to predict key traits in wheat, such as yield and plant height, using genotype and phenotype data. We implemented various <strong>machine learning models</strong> including Random Forest, XGBoost to select the most important SNPs (genetic markers) for accurate trait prediction.</p>
-        
+
         <p>Tools used include Python, Pandas, Scikit-learn, Matplotlib, Pyplot, Seaborn, Beagle, Plink. The model pipeline includes <strong>data cleaning, feature selection using GWAS and ML, imputation using Beagle, and performance comparison</strong> across models.</p>
-        
-        <p style="margin-bottom: 1em;"></p>
-        
-        <p style="text-align: center; margin-top: 20px;">
+
+        <!-- Button below text -->
+        <p style="margin-top: 20px;">
           <a href="https://muneeza4.github.io/Genomic_Selection_for_Resilient_Crop_Breeding_in_South-Punjab/" 
              style="
-                background-color: #FFFFFF;  /* white background */
-                color: #0B1E63;             /* dark blue text */
-                border: 2px solid #0B1E63;  /* dark blue border */
+                background-color: #FFFFFF;      /* white background */
+                color: #0B1E63;                 /* dark blue text */
+                border: 2px solid #0B1E63;      /* dark blue border */
                 text-decoration: none; 
                 padding: 0.75em 2em; 
                 font-family: 'Lora', serif; 
@@ -477,6 +476,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
     </div>
   </div>
 </section>
+
 
 
 
