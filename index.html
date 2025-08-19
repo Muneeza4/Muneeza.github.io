@@ -70,7 +70,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #ccc;
+  background-color: #FFFFFF;
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
 
@@ -112,28 +112,14 @@
   box-shadow: none !important; /* remove Bootstrap glow */
 }
 
+  #ftco-navbar .nav-link,
+  #ftco-navbar .nav-link:hover,
+  #ftco-navbar .nav-link:focus,
+  #ftco-navbar .nav-item.active .nav-link {
+      color: #FFFFFF !important;
+      text-decoration: none !important;
+  }
 
-
-/* Navbar background always white */
-.navbar {
-  background-color: #FFFFFF !important; /* White background */
-  transition: background-color 0.3s ease;
-}
-
-/* Navbar links styling */
-.navbar-nav .nav-link {
-    color: #0B1E63 !important; /* Dark Blue text default */
-    transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #87CEEB !important; /* Sky blue text hover */
-}
-
-.navbar-nav .nav-item.active .nav-link,
-.navbar-nav .nav-link:active {
-    color: #0B1E63 !important; /* Keep active link dark blue */
-}
 
 /* All headings and text */
 h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
@@ -169,23 +155,24 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 	  
 	  
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar" style="background-color: #000 !important;">
-    <div class="container">
-      <a class="navbar-brand" href="index.html" style="color: #FFFFFF !important;"></a>
-      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" style="color: #FFFFFF !important; border-color: #FFFFFF !important;">
-        <span class="oi oi-menu"></span> Menu
-      </button>
+  <div class="container">
+    <a class="navbar-brand" href="index.html" style="color: #FFFFFF !important;"></a>
+    <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" style="color: #FFFFFF !important; border-color: #FFFFFF !important;">
+      <span class="oi oi-menu"></span> Menu
+    </button>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav nav ml-auto">
-          <li class="nav-item"><a href="#home-section" class="nav-link" style="color: #FFFFFF !important;"><span>Home</span></a></li>
-          <li class="nav-item"><a href="#about-section" class="nav-link" style="color: #FFFFFF !important;"><span>About</span></a></li>
-          <li class="nav-item"><a href="#resume-section" class="nav-link" style="color: #FFFFFF !important;"><span>Resume</span></a></li>
-          <li class="nav-item"><a href="#project-section" class="nav-link" style="color: #FFFFFF !important;"><span>Projects</span></a></li>
-          <li class="nav-item"><a href="#contact-section" class="nav-link" style="color: #FFFFFF !important;"><span>Contact</span></a></li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav nav ml-auto">
+        <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+        <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+        <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+        <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+        <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+      </ul>
     </div>
+  </div>
 </nav>
+
 
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
@@ -285,10 +272,9 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
-									<!-- <span class="number" data-number="30">0</span> <span>+</span> -->
 									<span>&nbsp; Projects completed</span>
 								</p>
-								<a href="https://github.com/Muneeza4" class="btn btn-primary py-3 px-4">GitHub</a></p>
+								<a href="https://github.com/Muneeza4" class="btn btn-primary py-3 px-4" style="background-color: #FFFFFF !important; color: #0B1E63 !important; border: none !important; pointer-events: auto !important; text-decoration: none !important;">GitHub </a>
 							</div>
 						</div>
 					</div>
@@ -442,7 +428,10 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
       <h3 class="heading"><b>Genomic Selection for Wheat Trait Prediction</b></h3>
       <p>This Project focuses on using <strong>genomic selection</strong> techniques to predict key traits in wheat, such as yield and plant height, using genotype and phenotype data. We implemented various <strong>machine learning models</strong> including Random Forest, XGBoost to select the most important SNPs (genetic markers) for accurate trait prediction.</p>
       <p>Tools used include Python, Pandas, Scikit-learn, Matplotlib, Pyplot, Seaborn, Beagle, Plink. The model pipeline includes <strong>data cleaning, feature selection using GWAS and ML, imputation using Beagle, and performance comparison</strong> across models.</p>
-      <p><a href="https://muneeza4.github.io/Genomic_Selection_for_Resilient_Crop_Breeding_in_South-Punjab/" class="btn btn-primary py-2 px-4" style="color: #4E3629 !important;">View Project</a></p>
+      <p style="margin-bottom: 1em;"></p> <!-- ek line ka space --><p>
+        <a href="https://muneeza4.github.io/Genomic_Selection_for_Resilient_Crop_Breeding_in_South-Punjab/" class="btn btn-primary py-2 px-4"style="background-color: #FFFFFF !important; color: #0B1E63 !important; border: none !important; text-decoration: none !important; pointer-events: auto !important;">View Project</a>
+</p>
+
     </div>
 
   </div>
