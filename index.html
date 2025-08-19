@@ -144,9 +144,32 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
   background: transparent !important; /* Remove inner background blocks */
 }
 
+<!-- Custom CSS for Buttons -->
+    .btn-custom {
+        color: #0B1E63 !important;
+        background-color: #FFFFFF !important;
+        border: 2px solid #0B1E63 !important;
+        padding: 15px 30px; /* thoda bada kiya */
+        font-size: 1.1rem;  /* font thoda bada */
+        font-weight: 500;
+        text-decoration: none !important;
+        transition: all 0.3s ease;
+        margin-right: 10px;
+        border-radius: 4px;
+    }
+
+    .btn-custom:hover,
+    .btn-custom:focus,
+    .btn-custom:active {
+        color: #0B1E63 !important;
+        background-color: #FFFFFF !important;
+        border-color: #0B1E63 !important;
+        text-decoration: none !important;
+    }
 
 </style>
 
+	  
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #FFFFFF;">
@@ -228,29 +251,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
     </div>
 </section>
 
-<!-- Custom CSS for Buttons -->
-<style>
-    .btn-custom {
-        color: #0B1E63 !important;
-        background-color: #FFFFFF !important;
-        border: 2px solid #0B1E63 !important;
-        padding: 12px 25px;
-        font-weight: 500;
-        text-decoration: none !important;
-        transition: all 0.3s ease;
-        margin-right: 10px;
-        border-radius: 4px;
-    }
 
-    .btn-custom:hover,
-    .btn-custom:focus,
-    .btn-custom:active {
-        color: #0B1E63 !important;
-        background-color: #FFFFFF !important;
-        border-color: #0B1E63 !important;
-        text-decoration: none !important;
-    }
-</style>
 
 
 <div class="col-md-6 col-lg-7 pl-lg-5 pb-5" style="margin-left: 10px;"> <!-- Added slight left margin -->
@@ -286,12 +287,11 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 </div>
 
 
-						<div class="counter-wrap ftco-animate d-flex mt-md-3" style="align-items: center;">
-                         <div class="text" style="display: flex; align-items: center;">
-                              <p class="mb-4" style="margin: 0; margin-left: 10px;"><span>Projects completed</span> </p>
-                              <a href="https://github.com/Muneeza4"   class="btn btn-primary py-3 px-4"  style="background-color: #FFFFFF !important;  color: #0B1E63 !important; border: 2px solid #0B1E63 !important;  margin-left: 15px; pointer-events: auto !important; text-decoration: none !important;">GitHub</a>
+						<div class="counter-wrap ftco-animate d-flex mt-md-3" style="flex-direction: column; align-items: flex-start;">
+                          <p class="mb-2" style="margin-left: 10px; color: #4E3629; font-family: 'Lora', serif; font-weight: bold;"> Projects completed</p>
+                            <a href="https://github.com/Muneeza4" class="btn btn-primary py-3 px-4" style="background-color: #FFFFFF !important;  color: #0B1E63 !important; border: 2px solid #0B1E63 !important;  margin-left: 10px; text-decoration: none !important;"> GitHub</a>
                         </div>
-                     </div>
+
 
 					</div>
 				</div>
@@ -534,116 +534,166 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
   </div>
 </section>
 
-<div class="row d-flex" style="gap: 20px; justify-content: center;">
+<div class="col-md-12 d-flex ftco-animate mb-5">
+  <div class="blog-entry w-100" style="display: flex; flex-wrap: wrap; align-items: stretch;">
 
-  <!-- Project 1 -->
-  <div class="col-md-4 d-flex ftco-animate mb-4">
-    <div class="blog-entry justify-content-end">
-      <a href="https://jobrecommendationsystem-app.streamlit.app/" class="block-20 zoom-effect" 
-         style="background-image: url('images/Job_recommendation.png');">
-      </a>
-      <div class="text mt-3 float-right d-block">
-        <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-          <a href="https://github.com/Muneeza4/Job-Recommendation-System" style="color: inherit;">
-            <b>Personalized Job Recommendation System Leveraging TF-IDF and Cosine Similarity</b>
-          </a>
-        </h3>
-        <p>A content-based recommendation system with Streamlit UI, visualizations, and ML engine for personalized job recommendations.</p>
-        <p>Matches job seekers to roles using TF-IDF and cosine similarity on job descriptions.</p>
-      </div>
+    <!-- Image side -->
+    <div class="ProjectPoster" style="
+        flex: 1 1 70%;  /* increased from 40% to 50% */
+        max-width: 50%;
+        background-image: url('images/FYPposter.jpg'); 
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        min-height: 300px;">
+    </div>
+
+    <!-- Text side -->
+    <div class="text" style="
+        flex: 1 1 50%;  /* reduced from 60% to 50% */
+        max-width: 50%;
+        padding-left: 20px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;">
+      
+      <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;"><b>Genomic Selection for Wheat Trait Prediction</b></h3>
+      
+      <p>This Project focuses on using <strong>genomic selection</strong> techniques to predict key traits in wheat, such as yield and plant height, using genotype and phenotype data. We implemented various <strong>machine learning models</strong> including Random Forest, XGBoost to select the most important SNPs (genetic markers) for accurate trait prediction.</p>
+      
+      <p>Tools used include Python, Pandas, Scikit-learn, Matplotlib, Pyplot, Seaborn, Beagle, Plink. The model pipeline includes <strong>data cleaning, feature selection using GWAS and ML, imputation using Beagle, and performance comparison</strong> across models.</p>
+      
+      <!-- One line space -->
+      <p style="margin-bottom: 1em;"></p>
+      
+      <p style="text-align: center; margin-top: 20px;">
+      <a href="https://muneeza4.github.io/Genomic_Selection_for_Resilient_Crop_Breeding_in_South-Punjab/" 
+      style="
+         background-color: #0B1E63; 
+         color: #FFFFFF; 
+         border: none; 
+         text-decoration: none; 
+         padding: 0.75em 2em; 
+         font-family: 'Lora', serif; 
+         font-size: 1.1rem;
+         border-radius: 8px; 
+         display: inline-block;
+         transition: background-color 0.3s, transform 0.2s;
+     "
+     onmouseover="this.style.backgroundColor='#4E3629'; this.style.transform='scale(1.05)';"
+     onmouseout="this.style.backgroundColor='#0B1E63'; this.style.transform='scale(1)';">
+    View Project
+  </a>
+</p>
+
+
     </div>
   </div>
-
-  <!-- Project 2 -->
-  <div class="col-md-4 d-flex ftco-animate mb-4">
-    <div class="blog-entry justify-content-end">
-      <a href="https://github.com/Muneeza4/Resume_Category_Prediction" class="block-20 zoom-effect" 
-         style="background-image: url('images/proj_0.png');">
-      </a>
-      <div class="text mt-3 float-right d-block">
-        <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-          <a href="https://github.com/Muneeza4/Resume_Category_Prediction" style="color: inherit;">
-            <b>Resume Category Prediction with Machine Learning</b>
-          </a>
-        </h3>
-        <p>Web app using Streamlit to predict resume categories with NLP techniques like tokenization & lemmatization.</p>
-        <p>KNN classifier trained on TF-IDF vectors, deployed on Streamlit with interactive UI.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 3 -->
-  <div class="col-md-4 d-flex ftco-animate mb-4">
-    <div class="blog-entry justify-content-end">
-      <a href="https://credit-card-revenue-prediction-app.streamlit.app/" class="block-20 zoom-effect" 
-         style="background-image: url('images/proj_2.png');">
-      </a>
-      <div class="text mt-3 float-right d-block">
-        <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-          <a href="https://credit-card-revenue-prediction-app.streamlit.app/" style="color: inherit;">
-            <b>Credit Card Revenue Prediction using Python and ML</b>
-          </a>
-        </h3>
-        <p>Analyzed PostgreSQL customer data, visualized with Plotly, predicted revenue using Random Forest Regressor.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Add space before next row -->
-  <div class="w-100"></div>
-
-  <!-- Project 4 -->
-  <div class="col-md-4 d-flex ftco-animate mb-4">
-    <div class="blog-entry">
-      <a href="https://github.com/Muneeza4/Data-Analysis-/blob/main/Excel%20data%20analysis.xlsx" class="block-20 zoom-effect" 
-         style="background-image: url('images/proj_3.jpg'); background-size: cover; background-position: center;">
-      </a>
-      <div class="text mt-3 float-right d-block">
-        <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-          <a href="https://github.com/Muneeza4/Data-Analysis-/blob/main/Excel%20data%20analysis.xlsx" style="color: inherit;">
-            <b>Market Sales Analysis Dashboard In Excel</b>
-          </a>
-        </h3>
-        <p><strong>Key Visualizations:</strong> Trends by category, month, channel, and gender. Helped optimize marketing & inventory strategies.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 5 -->
-  <div class="col-md-4 d-flex ftco-animate mb-4">
-    <div class="blog-entry justify-content-end">
-      <a href="https://github.com/Muneeza4/Super_Market_Sales_Analysis_Power-Bi-Project" class="block-20 zoom-effect" 
-         style="background-image: url('images/proj_4.png');">
-      </a>
-      <div class="text mt-3 float-right d-block">
-        <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-          <a href="https://github.com/Muneeza4/Power-Bi-Project/tree/main/Super-Market-Sales-Analysis-main/Super-Market-Sales-Analysis-main" style="color: inherit;">
-            <b>Super Market Sales Analysis</b>
-          </a>
-        </h3>
-        <p>Power BI dashboard analyzing supermarket sales with slicers, KPIs, and detailed profit analysis by category.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 6 -->
-  <div class="col-md-4 d-flex ftco-animate mb-4">
-    <div class="blog-entry justify-content-end">
-      <a href="https://github.com/Muneeza4/Credit_Card_Analysis_PowerBi_Dashboard" class="block-20 zoom-effect" 
-         style="background-image: url('images/proj_5.png');">
-      </a>
-      <div class="text mt-3 float-right d-block">
-        <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-          <a href="https://github.com/Muneeza4/Power-Bi-Project/tree/main/Credit%20Card%20Financial%20Dashboard" style="color: inherit;">
-            <b>Credit Card Analysis</b>
-          </a>
-        </h3>
-        <p>PostgreSQL + Power BI dashboard for analyzing credit card sales, trends, revenue, and customer segmentation with dynamic filters.</p>
-      </div>
-    </div>
-  </div>
-
 </div>
+
+
+
+        <div class="row d-flex">
+		
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<a href="https://jobrecommendationsystem-app.streamlit.app/" class="block-20 zoom-effect" style="background-image: url('images/Job_recommendation.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+						<h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;" ><a href="https://github.com/Muneeza4/Job-Recommendation-System" style="color: inherit;"><b>Personalized Job Recommendation System Leveraging TF-IDF and Cosine Similarity</b></a></h3>
+						<p>A content-based recommendation system. The project features an interactive Streamlit interface, visualizations, and a machine learning engine for personalized job recommendations.</p>
+						<p>This system matches job seekers to suitable roles based on job descriptions, helping users find relevant positions efficiently. The model utilizes text processing techniques like TF-IDF and uses cosine similarity to recommend similar roles.</p>
+					</div>
+				</div>
+				
+
+				</div>
+	  
+			  
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Muneeza4/Resume_Category_Prediction" class="block-20 zoom-effect" style="background-image: url('images/proj_0.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+		
+						  <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;" ><a href="https://github.com/Muneeza4/Resume_Category_Prediction" style="color: inherit;"><b>Resume Category Prediction with Machine Learning</b></a></h3>
+						  <p>I developed a web app using Streamlit that predicts resume categories based on their content, aimed at helping recruiters automate resume classification, and Plotly.</p>
+		  
+				  <p>I developed an interactive UI for instant resume category predictions using NLP techniques like tokenization and lemmatization. I trained a KNN classifier with TF-IDF vectorization and deployed the model in a Streamlit app. This project showcases my skills in NLP, machine learning, and interactive web applications using Python and relevant libraries.</p></p>
+						</div>
+					  </div>
+					
+				</div>
+	  
+			  
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+					<a href="https://credit-card-revenue-prediction-app.streamlit.app/" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+	  
+					  <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;" ><a href="https://credit-card-revenue-prediction-app.streamlit.app/" style="color: inherit;"><b> Credit Card Revenue Prediction using Python and Machine Learning!</b> </a></h3>
+					  <p>I analyzed customer data from a PostgreSQL database to uncover insights and predict revenue based on demographics.</p>
+					  <p>Key highlights include:  Visualizing revenue by expense type with Plotly Treemap Identifying top states by total revenue, average annual fees by age group.<p> Predicting revenue using a Random Forest Regressor model.</p></p>
+					  <!-- <p>This project showcases my skills in Python, Pandas, Matplotlib, Plotly, seaborn, and Machine Learning with scikit-learn.</p> -->
+					</div>
+				  </div>
+				</div>
+	  
+			  
+				<div class="col-md-4 d-flex ftco-animate">
+		  <div class="blog-entry">
+			  <a href="https://github.com/Muneeza4/Data-Analysis-/blob/main/Excel%20data%20analysis.xlsx" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg'); background-size: cover; background-position: center;">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+				  <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;" ><a href="https://github.com/Muneeza4/Data-Analysis-/blob/main/Excel%20data%20analysis.xlsx" style="color: inherit;"><b>Market Sales Analysis Dashboard In Excel</b></a></h3>
+				  <p>Tool used: Excel</p>
+				  <p><strong>Key Visualizations:</strong> Sales trends by category, month, channel, and gender, providing insights into customer demographics, sales patterns, and regional performance for data-driven decision-making. This analysis highlighted key trends, optimizing marketing and inventory strategies.</p>
+	  
+			  </div>
+		  </div>
+	  </div>
+	  
+	  
+	  
+		  <div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+					  <a href="https://github.com/Muneeza4/Super_Market_Sales_Analysis_Power-Bi-Project" class="block-20 zoom-effect" style="background-image: url('images/proj_4.png');">
+					  </a>
+					  <div class="text mt-3 float-right d-block">
+						<h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
+							<a href="https://github.com/Muneeza4/Power-Bi-Project/tree/main/Super-Market-Sales-Analysis-main/Super-Market-Sales-Analysis-main" style="color: inherit;"><b>Super Market Sales Analysis</b></a>
+						</h3>
+						<p>Tools Used: Power BI</p>
+						
+						<p><strong>Project Overview:</strong> Analyzed and visualized supermarket sales data with key features including cards displaying the sum of quantity, sales, and shipped orders. Implemented year slicers for dynamic filtering. Key visualizations included sales distribution across different markets and detailed profit analysis by product categories and sub-categories.</p>
+	  
+					  </div>
+				
+						 </div>
+				</div>
+	  
+			  
+	  
+			<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+					  <a href="https://github.com/Muneeza4/Credit_Card_Analysis_PowerBi_Dashboard" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+					  </a>
+					  <div class="text mt-3 float-right d-block">
+		
+						<h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;" ><a href="https://github.com/Muneeza4/Power-Bi-Project/tree/main/Credit%20Card%20Financial%20Dashboard" style="color: inherit;"><b>Credit Card Analysis</b></a></h3>
+						<p>Tools Used: PostgreSQL, Power BI</p>
+						<p><strong>Project Overview:</strong> Dashboard for analyzing credit card sales data with key features such as data integration from PostgreSQL to Power BI, and revenue calculations consistent with Python results. Visualizations include revenue trends over time, key sales metrics like total sales, average transaction value, and customer segmentation, along with dynamic filters for deeper insights and analysis.</p>
+	  
+					  </div>
+				
+				 </div>
+	  
+			 </div>
+			</div>
+		 </div>
+	  </section>
+
 
 	
 	  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
