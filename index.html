@@ -154,24 +154,39 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 
 	  
 	  
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar" style="background-color: #000 !important;">
+<nav class="navbar navbar-expand-lg site-navbar" id="ftco-navbar" style="background-color: #FFFFFF !important; box-shadow: none !important;">
   <div class="container">
-    <a class="navbar-brand" href="index.html" style="color: #FFFFFF !important;"></a>
-    <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" style="color: #FFFFFF !important; border-color: #FFFFFF !important;">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html" style="color: #0B1E63 !important; font-weight: bold;">Muneeza</a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" style="color: #0B1E63 !important; border-color: #0B1E63 !important;">
       <span class="oi oi-menu"></span> Menu
     </button>
 
+    <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="ftco-nav">
-      <ul class="navbar-nav nav ml-auto">
-        <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-        <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-        <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-        <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-        <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home-section" style="color: #0B1E63 !important;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-section" style="color: #0B1E63 !important;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume-section" style="color: #0B1E63 !important;">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project-section" style="color: #0B1E63 !important;">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-section" style="color: #0B1E63 !important;">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 
 	  <section id="home-section" class="hero">
@@ -416,26 +431,55 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 
         <div class="row d-flex">
 
- <div class="col-md-12 d-flex ftco-animate mb-5">
-  <div class="blog-entry w-100">
-    
+<div class="col-md-12 d-flex ftco-animate mb-5">
+  <div class="blog-entry w-100" style="display: flex; flex-wrap: wrap; align-items: stretch;">
+
     <!-- Image side -->
-    <div class="ProjectPoster" style="background-image: url('images/FYPposter.jpg');">
+    <div class="ProjectPoster" style="
+        flex: 1 1 40%; 
+        background-image: url('images/FYPposter.jpg'); 
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        min-height: 300px;">
     </div>
 
     <!-- Text side -->
-    <div class="text">
-      <h3 class="heading"><b>Genomic Selection for Wheat Trait Prediction</b></h3>
+    <div class="text" style="
+        flex: 1 1 60%; 
+        padding-left: 20px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;">
+      
+      <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;"><b>Genomic Selection for Wheat Trait Prediction</b></h3>
+      
       <p>This Project focuses on using <strong>genomic selection</strong> techniques to predict key traits in wheat, such as yield and plant height, using genotype and phenotype data. We implemented various <strong>machine learning models</strong> including Random Forest, XGBoost to select the most important SNPs (genetic markers) for accurate trait prediction.</p>
+      
       <p>Tools used include Python, Pandas, Scikit-learn, Matplotlib, Pyplot, Seaborn, Beagle, Plink. The model pipeline includes <strong>data cleaning, feature selection using GWAS and ML, imputation using Beagle, and performance comparison</strong> across models.</p>
-      <p style="margin-bottom: 1em;"></p> <!-- ek line ka space --><p>
-        <a href="https://muneeza4.github.io/Genomic_Selection_for_Resilient_Crop_Breeding_in_South-Punjab/" class="btn btn-primary py-2 px-4"style="background-color: #FFFFFF !important; color: #0B1E63 !important; border: none !important; text-decoration: none !important; pointer-events: auto !important;">View Project</a>
-</p>
+      
+      <!-- One line space -->
+      <p style="margin-bottom: 1em;"></p>
+      
+      <p>
+        <a href="https://muneeza4.github.io/Genomic_Selection_for_Resilient_Crop_Breeding_in_South-Punjab/" 
+           style="
+               background-color: #FFFFFF !important; 
+               color: #0B1E63 !important; 
+               border: none !important; 
+               text-decoration: none !important; 
+               pointer-events: auto !important; 
+               padding: 0.5em 1em; 
+               font-family: 'Lora', serif; 
+               display: inline-block;">
+          View Project
+        </a>
+      </p>
 
     </div>
-
   </div>
 </div>
+
 
         <div class="row d-flex">
 		
