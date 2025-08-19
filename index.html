@@ -424,17 +424,16 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
   <div class="col-md-12 d-flex ftco-animate mb-5">
     <div class="blog-entry w-100" style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 30px;">
 
-      <!-- Left: Image -->
-      <div class="ProjectPoster" style="
-          flex: 1 1 55%;       /* slightly narrower image */
-          max-width: 55%;
-          background-image: url('images/FYPposter.jpg'); 
-          background-size: cover; 
-          background-repeat: no-repeat; 
-          background-position: center; 
-          min-height: 350px;
-          border-radius: 8px;">
-      </div>
+<div class="ProjectPoster" style="
+    flex: 1 1 55%;
+    max-width: 55%;
+    background-image: url('images/FYPposter.jpg'); 
+    background-size: contain;      /* fits inside without cropping */
+    background-repeat: no-repeat; 
+    background-position: center; 
+    min-height: 350px;
+    border-radius: 8px;">
+</div>
 
       <!-- Right: Text + Button -->
       <div class="text" style="
