@@ -6,6 +6,10 @@
  */
 :root {
   --blue: #007bff;
+  --primary: #87CEEB;   /* Sky Blue */
+  --blue: #0B1E63;      /* Dark Blue for text */
+  --light-sky: #D6F6FF; /* Light pastel sky blue */
+  --white: #ffffff;     /* White *
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -248,6 +252,8 @@ input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0; }
 
+  
+
 input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
@@ -257,6 +263,38 @@ input[type="month"] {
 textarea {
   overflow: auto;
   resize: vertical; }
+
+  /* ==== Custom Button Override (bootstrap ke neeche add karo) ==== */
+
+/* Default button look */
+button,
+[type="button"],
+[type="submit"] {
+  background-color: #ffffff !important;   /* White background */
+  color: #003366 !important;              /* Dark blue text */
+  border: 2px solid #87CEEB !important;   /* Sky blue border */
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+button:hover,
+[type="button"]:hover,
+[type="submit"]:hover {
+  background-color: #D6F6FF !important;   /* Light pastel sky blue */
+  color: #003366 !important;              /* Dark blue text */
+  border-color: #87CEEB !important;
+}
+
+/* Focus state */
+button:focus,
+[type="button"]:focus,
+[type="submit"]:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.5) !important;
+}
 
 fieldset {
   min-width: 0;
@@ -3444,98 +3482,67 @@ input[type="button"].btn-block {
 .tab-content > .active {
   display: block; }
 
+
+/* Navbar always white */
 .navbar {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem; }
-  .navbar > .container,
-  .navbar > .container-fluid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
+  padding: 0.5rem 1rem;
+  background-color: #ffffff !important;  /* White background fix */
+  color: #000000 !important;             /* Black text */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow for neat look */
+}
 
+/* Navbar brand text */
 .navbar-brand {
-  font-family:cursive
-   ;
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  font-family: cursive;
   font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap; }
-  .navbar-brand:hover, .navbar-brand:focus {
-    text-decoration: none; }
+  color: #000000 !important; /* Black brand text */
+}
 
-.navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none; }
-  .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0; }
-  .navbar-nav .dropdown-menu {
-    position: static;
-    float: none; }
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #007bff !important; /* Hover blue */
+  text-decoration: none;
+}
 
-.navbar-text {
-  display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #000000 !important;   /* Black links */
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
 
-.navbar-collapse {
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+.navbar-nav .nav-link:hover {
+  color: #007bff !important;   /* Blue hover effect */
+}
 
+/* Dropdown menu fix */
+.navbar-nav .dropdown-menu {
+  background-color: #ffffff !important; /* White dropdown */
+  border: 1px solid #ddd;
+}
+
+.navbar-nav .dropdown-item {
+  color: #000000 !important;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #007bff !important;
+}
+
+/* Toggler icon fix (mobile menu button) */
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem; }
-  .navbar-toggler:hover, .navbar-toggler:focus {
-    text-decoration: none; }
+  border-color: #000000;
+}
 
 .navbar-toggler-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  content: "";
-  background: no-repeat center center;
-  background-size: 100% 100%; }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
