@@ -276,33 +276,49 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
                         <div class="overlay"></div>
                     </div>
 
-                    <!-- Text Content -->
                     <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <div class="text">
-                            <span class="subheading">Hello!</span>
-                            <h1 class="mb-4 mt-3">I'm <span style="font-family: 'Times New Roman'>Muneeza</span></h1>
+  <div class="text">
+    <span class="subheading">Hello!</span>
+    <h1 class="mb-4 mt-3">
+      I'm <span id="my-name" style="font-family: 'Times New Roman', serif;">Muneeza</span>
+    </h1>
 
-                            <!-- Typing Animation -->
-                            <span id="typing-animation"></span>
-                            <script>
-                                const typingAnimationElement = document.getElementById('typing-animation');
-                                const typingTexts = ['Data Scientist', 'Data Analyst', 'Machine Learning'];
+    <!-- Typing Animation -->
+    <h2 id="typing-animation" style="font-family: 'Lora', serif; color: #0B1E63;"></h2>
+  </div>
+</div>
 
-                                function playTypingAnimation(text) {
-                                    for (let i = 0; i < text.length; i++) {
-                                        setTimeout(() => {
-                                            typingAnimationElement.textContent += text[i];
-                                        }, i * 200);
-                                    }
+<script>
+const typingAnimationElement = document.getElementById('typing-animation');
+const typingTexts = ['Data Scientist', 'Data Analyst', 'Machine Learning'];
 
-                                    setTimeout(() => {
-                                        typingAnimationElement.textContent = '';
-                                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-                                    }, text.length * 200);
-                                }
+let textIndex = 0; // which text is active
+let charIndex = 0; // which char in text
 
-                                playTypingAnimation(typingTexts[0]);
-                            </script>
+function type() {
+    if(charIndex < typingTexts[textIndex].length) {
+        typingAnimationElement.textContent += typingTexts[textIndex][charIndex];
+        charIndex++;
+        setTimeout(type, 150); // typing speed
+    } else {
+        setTimeout(erase, 1000); // wait before erasing
+    }
+}
+
+function erase() {
+    if(charIndex > 0) {
+        typingAnimationElement.textContent = typingTexts[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 100);
+    } else {
+        textIndex = (textIndex + 1) % typingTexts.length; // next text
+        setTimeout(type, 500);
+    }
+}
+
+// start typing
+type();
+</script>
 
                             <br><br>
 
