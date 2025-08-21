@@ -136,12 +136,39 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
   background-color: #FFFFFF !important; /* Same as page background */
   background-image: none !important;    /* Remove any extra bg image */
   box-shadow: none !important;          /* Remove shadow if applied */
+	
 }
 
 .hero .container,
 .hero .row,
 .hero .content {
   background: transparent !important; /* Remove inner background blocks */
+}
+
+
+#home-section.hero,
+#home-section .slider-item {
+  background-color: #FFFFFF !important;   /* White background fix */
+  background-image: none !important;      /* Remove bg image */
+  box-shadow: none !important;
+}
+
+/* Remove overlay effect in hero section */
+#home-section .overlay {
+  background: none !important;
+}
+
+/* Mobile-specific safety */
+@media (max-width: 768px) {
+  #home-section.hero,
+  #home-section .slider-item {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+  }
+
+  #home-section .overlay {
+    display: none !important; /* fully remove overlay in mobile */
+  }
 }
 
 <!-- Custom CSS for Buttons -->
@@ -373,6 +400,16 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
     color: #0B1E63; /* stays dark blue */
     border-color: #0B1E63; /* stays dark blue */
   }
+
+/* Mobile responsiveness fix */
+@media (max-width: 768px) {
+  #certificates-education .row .col-md-6.col-lg-5 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+
 </style>
 
 <section class="ftco-section ftco-no-pb" id="certificates-education">
@@ -388,7 +425,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
         <div class="row g-4 justify-content-center">
 
             <!-- Certificate 1 -->
-            <div class="col-md-6 col-lg-5" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
+            <div class"col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
                 <div class="resume-wrap ftco-animate p-3 border rounded">
                     <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Data Mining</span>
                     <h2 style="color:#AB886D;">Issuing Organization: Great Learning</h2>
@@ -397,7 +434,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
             </div>
 
             <!-- Certificate 2 -->
-            <div class="col-md-6 col-lg-5" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
+            <div class"col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
                 <div class="resume-wrap ftco-animate p-3 border rounded">
                     <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Statistics for Data Science</span>
                     <h2 style="color:#AB886D;">Issuing Organization: Simplilearn</h2>
@@ -406,7 +443,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
             </div>
 
             <!-- Certificate 3 -->
-            <div class="col-md-6 col-lg-5" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
+            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
                 <div class="resume-wrap ftco-animate p-3 border rounded">
                     <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Python</span>
                     <h2 style="color:#AB886D;">Issuing Organization: Kaggle</h2>
@@ -415,7 +452,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
             </div>
 
             <!-- Certificate 4 -->
-            <div class="col-md-6 col-lg-5" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
+            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
                 <div class="resume-wrap ftco-animate p-3 border rounded">
                     <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Machine Learning Algorithms</span>
                     <h2 style="color:#AB886D;">Issuing Organization: Great Learning</h2>
@@ -424,7 +461,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
             </div>
 
             <!-- Certificate 5 -->
-            <div class="col-md-6 col-lg-5" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
+            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
                 <div class="resume-wrap ftco-animate p-3 border rounded">
                     <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Image Recognition using ML</span>
                     <h2 style="color:#AB886D;">Issuing Organization: Simplilearn</h2>
@@ -433,7 +470,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
             </div>
 
             <!-- Certificate 6 -->
-            <div class="col-md-6 col-lg-5" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
+            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
                 <div class="resume-wrap ftco-animate p-3 border rounded">
                     <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Computer Vision</span>
                     <h2 style="color:#AB886D;">Issuing Organization: Kaggle</h2>
@@ -455,7 +492,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
         <div class="row g-4 justify-content-center">
 
             <!-- Education 1 -->
-            <div class="col-md-6 col-lg-5" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
+            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
                 <div class="resume-wrap ftco-animate p-3 border rounded">
                     <span class="date" style="color:#AB886D; font-family:'Lora', serif;">2021-2025</span>
                     <h2 style="color:#AB886D;">Bachelor of Data Science</h2>
@@ -465,7 +502,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
             </div>
 
             <!-- Education 2 -->
-            <div class="col-md-6 col-lg-5" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
+            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
                 <div class="resume-wrap ftco-animate p-3 border rounded">
                     <span class="date" style="color:#AB886D; font-family:'Lora', serif;">2019-2021</span>
                     <h2 style="color:#AB886D;">Intermediate of Computer Science</h2>
