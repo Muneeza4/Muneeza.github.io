@@ -202,7 +202,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #FFFFFF;">
-
 <nav class="custom-navbar">
   <a href="#home-section" class="nav-btn">Home</a>
   <a href="#about-section" class="nav-btn">About</a>
@@ -215,21 +214,23 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 /* Navbar container */
 .custom-navbar {
     background-color: #F1F0E8;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;        /* top-bottom 1rem, left-right 2rem */
     display: flex;
-    flex-wrap: wrap; /* allow wrapping on small screens */
-    justify-content: center; /* center buttons on mobile */
-    gap: 10px; /* spacing between buttons */
+    flex-wrap: wrap;           /* allow wrapping on small screens */
+    justify-content: flex-start; /* left align on desktop */
+    align-items: center;
+    gap: 15px;                 /* spacing between buttons */
     box-shadow: none;
+    margin-top: 10px;          /* space from top */
 }
 
 /* Navbar buttons */
 .nav-btn {
     display: inline-block;
     padding: 0.6em 1.5em;
-    background-color: #FFFFFF;
-    color: #0B1E63;
-    border: 2px solid #0B1E63;
+    background-color: #FFFFFF;  /* white background */
+    color: #0B1E63;             /* dark blue text */
+    border: 2px solid #0B1E63;  /* dark blue outline */
     border-radius: 6px;
     text-decoration: none;
     font-family: 'Lora', serif;
@@ -250,15 +251,17 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
     .custom-navbar {
         flex-direction: column; /* stack buttons vertically */
         align-items: center;
+        padding: 0.5rem 1rem;    /* reduce side padding on mobile */
     }
 
     .nav-btn {
-        width: 80%; /* full width with margin on mobile */
+        width: 80%;              /* full width with margin on mobile */
         margin-bottom: 10px;
         font-size: 0.95rem;
     }
 }
 </style>
+
 
 
 
@@ -290,7 +293,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 
 <script>
 const typingAnimationElement = document.getElementById('typing-animation');
-const typingTexts = ['Data Scientist', 'Data Analyst', 'Machine Learning'];
+const typingTexts = ['Data Scientist', 'Machine Learning', 'Deep Learning'];
 
 let textIndex = 0; // which text is active
 let charIndex = 0; // which char in text
