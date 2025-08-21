@@ -136,6 +136,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
   background-color: #FFFFFF !important; /* Same as page background */
   background-image: none !important;    /* Remove any extra bg image */
   box-shadow: none !important;          /* Remove shadow if applied */
+  	
 	
 }
 
@@ -232,7 +233,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
                     <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                         <div class="text">
                             <span class="subheading">Hello!</span>
-                            <h1 class="mb-4 mt-3">I'm <span>Muneeza</span></h1>
+                            <h1 class="mb-4 mt-3">I'm <span style="font-family: 'Times New Roman'>Muneeza</span></h1>
 
                             <!-- Typing Animation -->
                             <span id="typing-animation"></span>
@@ -552,15 +553,10 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
        style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px;">
 
     <!-- Left: Image -->
-    <div class="ProjectPoster" style="
-        flex: 1 1 55%;
-        max-width: 55%;
-        background-image: url('images/FYPposter.jpg'); 
-        background-size: contain;
-        background-repeat: no-repeat; 
-        background-position: center; 
-        min-height: 350px;
-        border-radius: 8px;">
+    <div class="ProjectPoster" style="flex: 1 1 55%; max-width: 55%; margin-bottom: 20px;">
+      <img src="images/FYPposter.jpg" 
+           alt="Project Poster" 
+           style="width: 100%; height: auto; border-radius: 8px; object-fit: contain;">
     </div>
 
     <!-- Right: Text + Button -->
@@ -602,22 +598,18 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
   </div>
 </section>
 
-
 <!-- Responsive CSS -->
 <style>
-  /* Mobile view adjustments */
   @media (max-width: 768px) {
     .project-container {
       flex-direction: column;   /* stack vertically */
-      align-items: center;      /* center align */
-	  background-size: cover !important;  /* contain ki jagah cover */
-      min-height: 250px !important;
+      align-items: center;
     }
 
     .ProjectPoster {
       max-width: 100% !important;
       flex: 1 1 100% !important;
-      min-height: 250px;        /* smaller height for mobile */
+      margin-bottom: 20px;
     }
 
     .text {
