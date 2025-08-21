@@ -266,122 +266,122 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 
 
 <section id="home-section" class="hero">
-    <div class="home-slider owl-carousel">
+  <div class="home-slider owl-carousel">
 
-        <!-- Slider Item -->
-        <div class="slider-item">
+    <!-- Slider Item -->
+    <div class="slider-item">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+
+          <!-- Background Image -->
+          <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
             <div class="overlay"></div>
-            <div class="container">
-                <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+          </div>
 
-                    <!-- Background Image -->
-                    <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-                        <div class="overlay"></div>
-                    </div>
+          <!-- Text & Buttons -->
+          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <div class="text">
+              <span class="subheading">Hello!</span>
+              <h1 class="mb-3 mt-2">
+                <span id="my-name" style="font-family: 'Times New Roman', serif;">I'm Muneeza</span>
+              </h1>
 
-                    <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-  <div class="text">
-    <span class="subheading">Hello!</span>
-    <h1 class="mb-4 mt-3">
-        <span id="my-name" style="font-family: 'Times New Roman', serif;">I'm Muneeza</span>
-    </h1>
+              <!-- Typing Animation -->
+              <h2 id="typing-animation" style="font-family: 'Lora', serif; color: #0B1E63; margin-bottom: 15px;"></h2>
 
-    <!-- Typing Animation -->
-    <h2 id="typing-animation" style="font-family: 'Lora', serif; color: #0B1E63;"></h2>
+              <!-- Buttons -->
+              <div class="btn-container" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: flex-start;">
+                <a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" class="custom-btn">LinkedIn</a>
+                <a href="https://www.kaggle.com/muneeza3" class="custom-btn">Kaggle</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End of Slider Item -->
+
   </div>
-</div>
+</section>
 
+<!-- Typing Animation Script -->
 <script>
 const typingAnimationElement = document.getElementById('typing-animation');
 const typingTexts = ['Data Scientist', 'Machine Learning', 'Deep Learning'];
 
-let textIndex = 0; // which text is active
-let charIndex = 0; // which char in text
+let textIndex = 0;
+let charIndex = 0;
 
 function type() {
-    if(charIndex < typingTexts[textIndex].length) {
-        typingAnimationElement.textContent += typingTexts[textIndex][charIndex];
-        charIndex++;
-        setTimeout(type, 150); // typing speed
-    } else {
-        setTimeout(erase, 1000); // wait before erasing
-    }
+  if(charIndex < typingTexts[textIndex].length) {
+    typingAnimationElement.textContent += typingTexts[textIndex][charIndex];
+    charIndex++;
+    setTimeout(type, 150);
+  } else {
+    setTimeout(erase, 1000);
+  }
 }
 
 function erase() {
-    if(charIndex > 0) {
-        typingAnimationElement.textContent = typingTexts[textIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, 100);
-    } else {
-        textIndex = (textIndex + 1) % typingTexts.length; // next text
-        setTimeout(type, 500);
-    }
+  if(charIndex > 0) {
+    typingAnimationElement.textContent = typingTexts[textIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, 100);
+  } else {
+    textIndex = (textIndex + 1) % typingTexts.length;
+    setTimeout(type, 500);
+  }
 }
 
-// start typing
 type();
 </script>
 
-                            <br><br>
-
- <!-- Buttons -->
-<div class="btn-container" style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-  <a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" class="custom-btn">
-    LinkedIn
-  </a>
-
-  <a href="https://www.kaggle.com/muneeza3" class="custom-btn">
-    Kaggle
-  </a>
-</div>
-
+<!-- Buttons CSS -->
 <style>
+.custom-btn {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #0B1E63;
+  border: 2px solid #0B1E63;
+  text-decoration: none;
+  padding: 0.85em 2.2em;
+  font-family: 'Lora', serif;
+  font-size: 1.15rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.custom-btn:hover {
+  background-color: #E0E0E0;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .btn-container {
+    flex-direction: column;   /* stack buttons vertically */
+    align-items: flex-start;  /* align left like desktop text */
+    gap: 10px;
+    margin-top: 10px;
+  }
+
   .custom-btn {
-      display: inline-block;
-      background-color: #FFFFFF;   /* white background */
-      color: #0B1E63;              /* dark blue text */
-      border: 2px solid #0B1E63;   /* dark blue border */
-      text-decoration: none;
-      padding: 0.85em 2.2em;       /* larger button */
-      font-family: 'Lora', serif;
-      font-size: 1.15rem;          /* slightly bigger text */
-      border-radius: 8px;
-      transition: background-color 0.3s, transform 0.2s;
-      text-align: center;
+    width: 100%;              /* full width on mobile */
+    font-size: 1rem;
   }
 
-  .custom-btn:hover {
-      background-color: #E0E0E0;
-      transform: scale(1.05);
+  .text h1 {
+    font-size: 1.8rem;        /* scale down name on mobile */
   }
 
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
-      .btn-container {
-          flex-wrap: nowrap;   /* prevent buttons from stacking */
-          gap: 10px;           /* smaller gap for mobile */
-      }
-
-      .custom-btn {
-          flex: 1 1 auto;      /* buttons shrink/expand evenly */
-          font-size: 1rem;     /* slightly smaller on mobile */
-      }
+  .text h2 {
+    font-size: 1.2rem;        /* scale down typing animation */
   }
+}
 </style>
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- End of Slider Item -->
-
-    </div>
-</section>
-
 
 
 
