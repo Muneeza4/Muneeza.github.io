@@ -61,6 +61,7 @@
   color: #0B1E63; /* Dark Blue for animated text */
   overflow: hidden;
   white-space: nowrap;
+  font-family: 'Times New Roman;
   animation: typing 3s steps(20, end) infinite;
 }
 
@@ -202,16 +203,62 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #FFFFFF;">
 
-	  
-	  
-<nav style="background-color: #F1F0E8; padding: 0.5rem 1rem; text-align: left; box-shadow: none;">
-  <a href="#home-section" style="color: #0B1E63; margin: 0 15px; text-decoration: none;">Home</a>
-  <a href="#about-section" style="color: #0B1E63; margin: 0 15px; text-decoration: none;">About</a>
-  <a href="#resume-section" style="color: #0B1E63; margin: 0 15px; text-decoration: none;">Resume</a>
-  <a href="#project-section" style="color: #0B1E63; margin: 0 15px; text-decoration: none;">Projects</a>
-  <a href="#contact-section" style="color: #0B1E63; margin: 0 15px; text-decoration: none;">Contacts</a>
+<nav class="custom-navbar">
+  <a href="#home-section" class="nav-btn">Home</a>
+  <a href="#about-section" class="nav-btn">About</a>
+  <a href="#resume-section" class="nav-btn">Resume</a>
+  <a href="#project-section" class="nav-btn">Projects</a>
+  <a href="#contact-section" class="nav-btn">Contacts</a>
 </nav>
 
+<style>
+/* Navbar container */
+.custom-navbar {
+    background-color: #F1F0E8;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap; /* allow wrapping on small screens */
+    justify-content: center; /* center buttons on mobile */
+    gap: 10px; /* spacing between buttons */
+    box-shadow: none;
+}
+
+/* Navbar buttons */
+.nav-btn {
+    display: inline-block;
+    padding: 0.6em 1.5em;
+    background-color: #FFFFFF;
+    color: #0B1E63;
+    border: 2px solid #0B1E63;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-btn:hover {
+    background-color: #E0E0E0;
+    transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .custom-navbar {
+        flex-direction: column; /* stack buttons vertically */
+        align-items: center;
+    }
+
+    .nav-btn {
+        width: 80%; /* full width with margin on mobile */
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+    }
+}
+</style>
 
 
 
@@ -260,44 +307,50 @@ h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
                             <br><br>
 
  <!-- Buttons -->
-<p style="margin-top: 20px;">
-  <a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" 
-     style="
-       display: inline-block;
-       background-color: #FFFFFF;   /* white background */
-       color: #0B1E63;              /* dark blue text */
-       border: 2px solid #0B1E63;   /* dark blue border */
-       text-decoration: none;
-       padding: 0.85em 2.2em;       /* larger button */
-       font-family: 'Lora', serif;
-       font-size: 1.15rem;           /* slightly bigger text */
-       border-radius: 8px;
-       margin-right: 15px;           /* space between buttons */
-       transition: background-color 0.3s, transform 0.2s;
-     "
-     onmouseover="this.style.backgroundColor='#E0E0E0'; this.style.transform='scale(1.05)';"
-     onmouseout="this.style.backgroundColor='#FFFFFF'; this.style.transform='scale(1)';">
+<div class="btn-container" style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+  <a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" class="custom-btn">
     LinkedIn
   </a>
 
-  <a href="https://www.kaggle.com/muneeza3" 
-     style="
-       display: inline-block;
-       background-color: #FFFFFF; 
-       color: #0B1E63; 
-       border: 2px solid #0B1E63; 
-       text-decoration: none;
-       padding: 0.85em 2.2em; 
-       font-family: 'Lora', serif;
-       font-size: 1.15rem;
-       border-radius: 8px;
-       transition: background-color 0.3s, transform 0.2s;
-     "
-     onmouseover="this.style.backgroundColor='#E0E0E0'; this.style.transform='scale(1.05)';"
-     onmouseout="this.style.backgroundColor='#FFFFFF'; this.style.transform='scale(1)';">
+  <a href="https://www.kaggle.com/muneeza3" class="custom-btn">
     Kaggle
   </a>
-</p>
+</div>
+
+<style>
+  .custom-btn {
+      display: inline-block;
+      background-color: #FFFFFF;   /* white background */
+      color: #0B1E63;              /* dark blue text */
+      border: 2px solid #0B1E63;   /* dark blue border */
+      text-decoration: none;
+      padding: 0.85em 2.2em;       /* larger button */
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;          /* slightly bigger text */
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.2s;
+      text-align: center;
+  }
+
+  .custom-btn:hover {
+      background-color: #E0E0E0;
+      transform: scale(1.05);
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+      .btn-container {
+          flex-wrap: nowrap;   /* prevent buttons from stacking */
+          gap: 10px;           /* smaller gap for mobile */
+      }
+
+      .custom-btn {
+          flex: 1 1 auto;      /* buttons shrink/expand evenly */
+          font-size: 1rem;     /* slightly smaller on mobile */
+      }
+  }
+</style>
+
 
                         </div>
                     </div>
