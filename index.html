@@ -1,953 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Muneeza Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
-<style> 
-/*======================================
-// ABOUT SECTION
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-/* Skills progress bars */
-.skill-mf .progress {
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #f7f4f2;
-}
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: #0B1E63; /* Dark Blue for animated text */
-  overflow: hidden;
-  white-space: nowrap;
-  font-family: 'Times New Roman;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #FFFFFF;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes typing-cursor {
-  from { width: 5px; }
-  to { width: 0; }
-}
-
-/* Project image zoom effect */
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-/* Buttons default */
-.btn-primary, .btn-white {
-  background-color: #FFFFFF !important; /* White default */
-  color: #0B1E63 !important; /* Dark Blue text */
-  border: none !important;
-  transition: all 0.3s ease;
-}
-
-/* Buttons hover */
-.btn-primary:hover, .btn-white:hover,
-.btn-primary:focus, .btn-white:focus,
-.btn-primary:active, .btn-white:active {
-  background-color: #D6F6FF !important; /* Pastel sky blue */
-  color: #0B1E63 !important; /* Dark Blue text */
-  border: none !important;
-  box-shadow: none !important; /* remove Bootstrap glow */
-}
-
-  #ftco-navbar .nav-link,
-  #ftco-navbar .nav-link:hover,
-  #ftco-navbar .nav-link:focus,
-  #ftco-navbar .nav-item.active .nav-link {
-      color: #FFFFFF !important;
-      text-decoration: none !important;
-  }
-
-
-/* All headings and text */
-h1, h2, h3, h4, h5, h6, p, span, a, .subheading {
-    color: #0B1E63 !important; /* Dark Blue */
-}
-
-.subheading {
-  color: #0B1E63 !important;
-  font-size: 2rem; 
-}
-	
-/* Hero Section (Hello / I am Muneeza) */
-.hero {
-  background-color: #FFFFFF !important; /* Same as page background */
-  background-image: none !important;    /* Remove any extra bg image */
-  box-shadow: none !important;          /* Remove shadow if applied */
-  	
-	
-}
-
-.hero .container,
-.hero .row,
-.hero .content {
-  background: transparent !important; /* Remove inner background blocks */
-}
-
-
-#home-section.hero,
-#home-section .slider-item {
-  background-color: #FFFFFF !important;   /* White background fix */
-  background-image: none !important;      /* Remove bg image */
-  box-shadow: none !important;
-}
-
-/* Remove overlay effect in hero section */
-#home-section .overlay {
-  background: none !important;
-}
-
-/* Mobile-specific safety */
-@media (max-width: 768px) {
-  #home-section.hero,
-  #home-section .slider-item {
-    background-color: #FFFFFF !important;
-    background-image: none !important;
-  }
-
-  #home-section .overlay {
-    display: none !important; /* fully remove overlay in mobile */
-  }
-}
-
-<!-- Custom CSS for Buttons -->
-    .btn-custom {
-        color: #0B1E63 !important;
-        background-color: #FFFFFF !important;
-        border: 2px solid #0B1E63 !important;
-        padding: 15px 30px; /* thoda bada kiya */
-        font-size: 1.1rem;  /* font thoda bada */
-        font-weight: 500;
-        text-decoration: none !important;
-        transition: all 0.3s ease;
-        margin-right: 10px;
-        border-radius: 4px;
-    }
-
-    .btn-custom:hover,
-    .btn-custom:focus,
-    .btn-custom:active {
-        color: #0B1E63 !important;
-        background-color: #FFFFFF !important;
-        border-color: #0B1E63 !important;
-        text-decoration: none !important;
-    }
-
-</style>
-
-	  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muneeza Mehboob | Data Scientist</title>
+  <meta name="description" content="Muneeza Mehboob – Data Scientist specializing in Machine Learning, Deep Learning, and AI. Explore projects, skills, and certifications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: #FFFFFF;">
-<nav class="custom-navbar">
-  <a href="#home-section" class="nav-btn">Home</a>
-  <a href="#about-section" class="nav-btn">About</a>
-  <a href="#resume-section" class="nav-btn">Resume</a>
-  <a href="#project-section" class="nav-btn">Projects</a>
-  <a href="#contact-section" class="nav-btn">Contacts</a>
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">M<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#resume" class="nav-link">Resume</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-	
-<style>
-/* Navbar container */
-.custom-navbar {
-    background-color: #fffff7;
-    padding: 1rem 2rem;        /* top-bottom 1rem, left-right 2rem */
-    display: flex;
-    flex-wrap: wrap;           /* allow wrapping on small screens */
-    justify-content: flex-start; /* left align on desktop */
-    align-items: center;
-    gap: 15px;                 /* spacing between buttons */
-    box-shadow: none;
-    margin-top: 10px;          /* space from top */
-}
-
-/* Navbar buttons */
-.nav-btn {
-    display: inline-block;
-    padding: 0.6em 1.5em;
-    background-color: #FFFFFF;  /* white background */
-    color: #0B1E63;             /* dark blue text */
-    border: 2px solid #0B1E63;  /* dark blue outline */
-    border-radius: 6px;
-    text-decoration: none;
-    font-family: 'Lora', serif;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-/* Hover effect */
-.nav-btn:hover {
-    background-color: #E0E0E0;
-    transform: scale(1.05);
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .custom-navbar {
-        flex-direction: column; /* stack buttons vertically */
-        align-items: center;
-        padding: 0.5rem 1rem;    /* reduce side padding on mobile */
-    }
-
-    .nav-btn {
-        width: 80%;              /* full width with margin on mobile */
-        margin-bottom: 10px;
-        font-size: 0.95rem;
-    }
-}
-</style>
-
-
-
-
-<section id="home-section" class="hero">
-  <div class="home-slider owl-carousel">
-
-    <!-- Slider Item -->
-    <div class="slider-item">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-
-          <!-- Background Image -->
-          <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-            <div class="overlay"></div>
-          </div>
-
-          <!-- Text & Buttons -->
-          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <div class="text">
-              <span class="subheading">Hello!</span>
-              <h1 class="mb-3 mt-2">
-                <span id="my-name" style="font-family: 'Times New Roman', serif;">I'm Muneeza</span>
-              </h1>
-
-              <!-- Typing Animation -->
-              <h2 id="typing-animation" style="font-family: 'Lora', serif; color: #0B1E63; margin-bottom: 15px;"></h2>
-
-              <!-- Buttons -->
-              <div class="btn-container" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: flex-start;">
-                <a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" class="custom-btn">LinkedIn</a>
-                <a href="https://www.kaggle.com/muneeza3" class="custom-btn">Kaggle</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!-- End of Slider Item -->
-
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+  <div class="hero-bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
   </div>
+  <div class="hero-content">
+    <p class="hero-greeting fade-in">👋 Hello, I'm</p>
+    <h1 class="hero-name fade-in delay-1">Muneeza<br /><span>Mehboob</span></h1>
+    <div class="hero-typing fade-in delay-2">
+      <span class="typing-prefix">I specialize in </span>
+      <span id="typed-text" class="typed"></span><span class="cursor">|</span>
+    </div>
+    <p class="hero-bio fade-in delay-3">Data Scientist &amp; AI Researcher crafting intelligent solutions from complex data.</p>
+    <div class="hero-btns fade-in delay-4">
+      <a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" target="_blank" class="btn btn-primary">LinkedIn</a>
+      <a href="https://www.kaggle.com/muneeza3" target="_blank" class="btn btn-outline">Kaggle</a>
+      <a href="https://github.com/Muneeza4" target="_blank" class="btn btn-outline">GitHub</a>
+    </div>
+  </div>
+  <div class="hero-image fade-in delay-3">
+    <div class="hero-img-wrapper">
+      <img src="images/bg_1.png" alt="Muneeza Mehboob" />
+      <div class="hero-img-ring"></div>
+      <div class="hero-img-dot dot-1"></div>
+      <div class="hero-img-dot dot-2"></div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-down">
+    <span></span>
+    <span></span>
+  </a>
 </section>
 
-<!-- Typing Animation Script -->
-<script>
-const typingAnimationElement = document.getElementById('typing-animation');
-const typingTexts = ['Data Scientist', 'Machine Learning', 'Deep Learning'];
-
-let textIndex = 0;
-let charIndex = 0;
-
-function type() {
-  if(charIndex < typingTexts[textIndex].length) {
-    typingAnimationElement.textContent += typingTexts[textIndex][charIndex];
-    charIndex++;
-    setTimeout(type, 150);
-  } else {
-    setTimeout(erase, 1000);
-  }
-}
-
-function erase() {
-  if(charIndex > 0) {
-    typingAnimationElement.textContent = typingTexts[textIndex].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(erase, 100);
-  } else {
-    textIndex = (textIndex + 1) % typingTexts.length;
-    setTimeout(type, 500);
-  }
-}
-
-type();
-</script>
-
-<!-- Buttons CSS -->
-<style>
-.custom-btn {
-  display: inline-block;
-  background-color: #FFFFFF;
-  color: #0B1E63;
-  border: 2px solid #0B1E63;
-  text-decoration: none;
-  padding: 0.85em 2.2em;
-  font-family: 'Lora', serif;
-  font-size: 1.15rem;
-  border-radius: 8px;
-  transition: background-color 0.3s, transform 0.2s;
-  text-align: center;
-}
-
-.custom-btn:hover {
-  background-color: #E0E0E0;
-  transform: scale(1.05);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .btn-container {
-    flex-direction: column;   /* stack buttons vertically */
-    align-items: flex-start;  /* align left like desktop text */
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .custom-btn {
-    width: 100%;              /* full width on mobile */
-    font-size: 1rem;
-  }
-
-  .text h1 {
-    font-size: 1.8rem;        /* scale down name on mobile */
-  }
-
-  .text h2 {
-    font-size: 1.2rem;        /* scale down typing animation */
-  }
-}
-</style>
-
-
-
-<div class="col-md-6 col-lg-7 pl-lg-5 pb-5" style="margin-left: 10px;"> <!-- Added slight left margin -->
-
-    <div class="row justify-content-start pb-3">
-
-        <div class="col-md-12 heading-section ftco-animate">
-            <h2 class="mb-4" style="color: #FFFFFF; font-family: 'Lora', serif;">About Me</h2>
-
-            <p>
-                Hi there! I'm Muneeza, a Data Scientist with a strong interest in machine learning and deep learning. I have skills in Python, SQL, machine learning and deep learning algorithms, and Power BI, and I'm actively working on projects related to machine learning and data analysis.
-            </p>
-
-            <p>
-                Through hands-on projects and self-directed learning, I'm exploring the intricacies of data science and machine learning, seeking to understand how data-driven insights and predictive models can drive meaningful change in various domains. From manipulating datasets and extracting valuable information to crafting compelling visualizations and building machine learning models, I'm constantly pushing myself to learn and grow in this dynamic field.
-            </p>
-
-            <h3 class="mt-4" style="color: #4E3629; font-family: 'Lora', serif;">Skills</h3>
-
-            <ul class="about-info mt-4 px-md-0 px-2">
-                <li><strong>Programming Languages:</strong> &nbsp;Python, SQL</li>
-                <li><strong>Tools & Technologies:</strong> &nbsp;Power BI, Jupyter Notebook, Excel, GitHub, Streamlit, Gradio</li>
-    			<li><strong>Data Visualization:</strong> &nbsp;Matplotlib, Seaborn, Plotly</li>
-    			<li><strong>Machine Learning & Data Science:</strong> &nbsp;Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Joblib</li>
-    			<li><strong>Deep Learning:</strong> &nbsp;ANN, CNN, RNN, LSTM, GRU, Transformers, Computer Vision</li>
-    			<li><strong>NLP & Text Analytics:</strong> &nbsp;NLTK, TF-IDF, Bag of Words, Text Preprocessing</li>
-				<li><strong>Data Analysis:</strong> &nbsp; Data Cleaning, EDA, Feature Engineering </li>
-   				<li><strong>Statistics:</strong> &nbsp;Statistical Analysis</li>
-             </ul>
-
-        </div>
-
-    </div>
-</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3" style="flex-direction: column; align-items: flex-start;">
-                        <p class="mb-2" style="margin-left: 20px; color: #4E3629; font-family: 'Lora', serif; font-weight: bold;">Projects completed</p><a href="https://github.com/Muneeza4" class="btn btn-primary py-3 px-4" style="background-color: #FFFFFF !important;  
-                         color: #0B1E63 !important; border: 2px solid #0B1E63 !important;  margin-left: 20px; text-decoration: none !important;">GitHub</a></div>
-
-
-
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-<!-- ========================
-     ACHIEVEMENTS SECTION
-============================= -->
-
-<style>
-  /* Mobile view gap between achievement cards */
-  @media (max-width: 767px) {
-    #achievements-section .col-md-10 {
-      margin-bottom: 20px;
-    }
-  }
-</style>
-
-
-<section class="ftco-section" id="achievements-section" style="background-color:#FFFFFF; padding:50px;50px;15px 15px;">
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
   <div class="container">
-
-    <!-- Heading -->
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-8 text-center">
-        <h2 style="color:#4E3629; font-family:'Lora', serif; font-weight:bold;">
-          Achievements
-        </h2>
-      </div>
+    <div class="section-header">
+      <span class="section-tag">Who I Am</span>
+      <h2 class="section-title">About Me</h2>
     </div>
-
-    <!-- Achievements Cards -->
-    <div class="row justify-content-center gx-5 gy-4">
-
-      <!-- Achievement 1 -->
-      <div class="col-md-10 col-lg-6 d-flex">
-        <div class="p-4 border rounded w-100 text-center" style="background-color:#F9F9F9;">
-          <h3 style="color:#AB886D; font-family:'Lora', serif;">
-            Silver Medalist
-          </h3>
-          <p style="color:#0B1E63;">
-            Awarded Silver Medal in Bachelor of Data Science
-            at MNS University of Agriculture, Multan.
-          </p>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hi there! I'm <strong>Muneeza</strong>, a Data Scientist with a strong interest in machine learning and deep learning. I have skills in Python, SQL, machine learning and deep learning algorithms, and Power BI, and I'm actively working on projects related to machine learning and data analysis.</p>
+        <p>Through hands-on projects and self-directed learning, I'm exploring the intricacies of data science and machine learning, seeking to understand how data-driven insights and predictive models can drive meaningful change. From manipulating datasets and extracting valuable information to crafting compelling visualizations and building ML models, I'm constantly pushing myself to learn and grow.</p>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">3.96</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">🥈</span>
+            <span class="stat-label">Silver Medalist</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">6+</span>
+            <span class="stat-label">Projects</span>
+          </div>
         </div>
       </div>
-
-      <!-- Achievement 2 -->
-      <div class="col-md-10 col-lg-6 d-flex">
-        <div class="p-4 border rounded w-100 text-center" style="background-color:#F9F9F9;">
-          <h3 style="color:#AB886D; font-family:'Lora', serif;">
-            Prime Minister Laptop Scheme (2023)
-          </h3>
-          <p style="color:#0B1E63;">
-            Received a laptop under the Prime Minister’s Laptop Scheme in 2023,
-            issued by the Government of Pakistan, in recognition of academic merit.
-          </p>
+      <div class="skills-panel reveal">
+        <h3>Technical Skills</h3>
+        <div class="skill-tags">
+          <div class="skill-group">
+            <span class="skill-group-label">Languages</span>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-group-label">ML / DL</span>
+            <div class="tags">
+              <span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">ANN</span><span class="tag">CNN</span><span class="tag">LSTM</span><span class="tag">Transformers</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-group-label">Data Science</span>
+            <div class="tags">
+              <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">EDA</span><span class="tag">Feature Engineering</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-group-label">Visualization</span>
+            <div class="tags">
+              <span class="tag">Power BI</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Plotly</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-group-label">NLP</span>
+            <div class="tags">
+              <span class="tag">NLTK</span><span class="tag">TF-IDF</span><span class="tag">Bag of Words</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-group-label">Tools</span>
+            <div class="tags">
+              <span class="tag">Streamlit</span><span class="tag">Gradio</span><span class="tag">GitHub</span><span class="tag">Jupyter</span><span class="tag">Excel</span>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-	
-<section class="ftco-section ftco-no-pb" id="resume-section">
+<!-- ===== ACHIEVEMENTS ===== -->
+<section id="achievements" class="section section-alt">
   <div class="container">
-    <div class="row justify-content-center pb-5">
-      <div class="col-md-10 heading-section text-center ftco-animate">
-        <h2 class="mb-4" style="color: #4E3629; font-family: 'Lora', serif;">Resume</h2>
-        <p>
-          Passionate Data Scientist with a strong focus on data analysis and visualization. Proficient in Python, machine learning, and deep learning, with a proven ability to transform complex data into clear, actionable insights
-        </p>
-
-        <!-- Text and button in one div -->
-        <div class="mt-4">
-          <p style="margin-bottom: 40px;">Check out my CV for detailed experience and projects:</p>
-          <a href="https://drive.google.com/file/d/1cY-Yz9Cr80zLqV6CWg1ipiXRzZRckaKa/view?usp=sharing" class="btn-custom"> Download CV </a>
-        </div>
+    <div class="section-header">
+      <span class="section-tag">Recognition</span>
+      <h2 class="section-title">Achievements</h2>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🥈</div>
+        <h3>Silver Medalist</h3>
+        <p>Awarded Silver Medal in Bachelor of Data Science at MNS University of Agriculture, Multan — a recognition of outstanding academic performance.</p>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">💻</div>
+        <h3>Prime Minister Laptop Scheme (2023)</h3>
+        <p>Received a laptop under the Prime Minister's Laptop Scheme in 2023, issued by the Government of Pakistan, in recognition of academic merit.</p>
       </div>
     </div>
   </div>
-
-  <!-- Extra space after section -->
-<div style="height: 20px;"></div>
 </section>
 
-<!-- Custom CSS -->
-<style>
-  .btn-custom {
-    background-color: #FFFFFF;
-    color: #0B1E63;
-    border: 2px solid #0B1E63;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-
-  .btn-custom:hover,
-  .btn-custom:focus,
-  .btn-custom:active {
-    background-color: #FFFFFF; /* stays white */
-    color: #0B1E63; /* stays dark blue */
-    border-color: #0B1E63; /* stays dark blue */
-  }
-
-/* Mobile responsiveness fix */
-@media (max-width: 768px) {
-  #certificates-education .row .col-md-6.col-lg-5 {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-  }
-}
-
-
-</style>
-
-<section class="ftco-section ftco-no-pb" id="certificates-education">
-    <div class="container">
-
-        <!-- Certificates Section -->
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <h1 class="big-4" style="color: #4E3629; font-family: 'Lora', serif; margin-bottom: 40px;"><b>Certificates</b></h1>
-            </div>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-
-            <!-- Certificate 1 -->
-            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
-                <div class="resume-wrap ftco-animate p-3 border rounded">
-                    <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Data Mining</span>
-                    <h2 style="color:#AB886D;">Issuing Organization: Great Learning</h2>
-                    <p>Studied data mining techniques including classification, clustering, association, and anomaly detection, with a focus on extracting valuable insights from large datasets.</p>
-                </div>
-            </div>
-
-            <!-- Certificate 2 -->
-           <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">    
-                <div class="resume-wrap ftco-animate p-3 border rounded">
-                    <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Statistics for Data Science</span>
-                    <h2 style="color:#AB886D;">Issuing Organization: Simplilearn</h2>
-                    <p>Learned key statistical techniques like probability, hypothesis testing, and regression analysis, applied to data science problems for insightful decision-making.</p>
-                </div>
-            </div>
-
-            <!-- Certificate 3 -->
-            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
-                <div class="resume-wrap ftco-animate p-3 border rounded">
-                    <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Python</span>
-                    <h2 style="color:#AB886D;">Issuing Organization: Kaggle</h2>
-                    <p>Demonstrates proficiency in Python, covering syntax, data structures, and libraries like NumPy, Pandas, Matplotlib, and Seaborn.</p>
-                </div>
-            </div>
-
-            <!-- Certificate 4 -->
-            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
-                <div class="resume-wrap ftco-animate p-3 border rounded">
-                    <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Machine Learning Algorithms</span>
-                    <h2 style="color:#AB886D;">Issuing Organization: Great Learning</h2>
-                    <p>Gained deep insights and practical skills in various machine learning techniques and algorithms to solve real-world problems.</p>
-                </div>
-            </div>
-
-            <!-- Certificate 5 -->
-            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
-                <div class="resume-wrap ftco-animate p-3 border rounded">
-                    <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Image Recognition using ML</span>
-                    <h2 style="color:#AB886D;">Issuing Organization: Simplilearn</h2>
-                    <p>Completed a course on image recognition using Machine Learning, gaining expertise in applying Machine Learning models for object classification and image analysis.</p>
-                </div>
-            </div>
-
-            <!-- Certificate 6 -->
-            <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
-                <div class="resume-wrap ftco-animate p-3 border rounded">
-                    <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Computer Vision</span>
-                    <h2 style="color:#AB886D;">Issuing Organization: Kaggle</h2>
-                    <p>Mastered tools and algorithms to enable machines to ‘see’ and understand the world, with practical skills in object detection and AI-driven visual analysis.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <br><br>
-
-        <!-- Education Section -->
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <h1 class="big-4" style="color:#4E3629; font-family:'Lora', serif; margin-bottom:40px;"><b>Education</b></h1>
-            </div>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-
-            <!-- Education 1 -->
-			
-          <div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
-                <div class="resume-wrap ftco-animate p-3 border rounded">
-                    <span class="date" style="color:#AB886D; font-family:'Lora', serif;">Sep 2025</span>
-                    <h2 style="color:#AB886D;">MPhil in Artificial Intelligence</h2>
-                    <span class="position"> University of the punjab </span>
-                    <!-- <p class="mt-2">Grade: A+</p> -->
-                </div>
-            </div>
-			
-            <!-- Education 2 -->
-			
-			<div class="col-md-6 col-lg-5 mb-4" style="flex:0 0 48%; max-width:48%; margin-bottom:20px;">
-                  <div class="resume-wrap ftco-animate p-3 border rounded">
-            <span class="date" style="color:#AB886D; font-family:'Lora', serif;">2021-2025</span>
-            <h2 style="color:#AB886D;"> Bachelor of Data Science <span style="font-size:16px; font-weight:normal;">  -- CGPA: 3.96</span> </h2>
-            <span class="position">MNS University of Agriculture, Multan</span>
-					  
-    </div>
-</div>
-
-
-                </div>
-            </div>
-            
-
-        </div>
-
-    </div>
-</section>
-
-
-
-<section class="ftco-section" id="project-section">
-
-
-	
+<!-- ===== RESUME ===== -->
+<section id="resume" class="section">
   <div class="container">
-    <!-- Section Heading -->
-    <div class="row justify-content-center mb-5 pb-5">
-      <div class="col-md-8 heading-section text-center ftco-animate">
-        <h2 class="mb-4" 
-            style="color: #4E3629; font-family: 'Lora', serif; margin-bottom: 50px;">
-          <b>Projects</b>
-        </h2>
-        <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+    <div class="section-header">
+      <span class="section-tag">Background</span>
+      <h2 class="section-title">Resume</h2>
+      <p class="section-subtitle">Passionate Data Scientist with a strong focus on data analysis and visualization. Proficient in Python, machine learning, and deep learning, with a proven ability to transform complex data into clear, actionable insights.</p>
+      <a href="https://drive.google.com/file/d/1cY-Yz9Cr80zLqV6CWg1ipiXRzZRckaKa/view?usp=sharing" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;">Download CV</a>
+    </div>
+
+    <!-- Education -->
+    <div class="resume-block">
+      <h3 class="resume-block-title"><span class="block-icon">🎓</span> Education</h3>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Sep 2025 – Present</span>
+            <h4>MPhil in Artificial Intelligence</h4>
+            <p class="timeline-org">University of the Punjab</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2021 – 2025</span>
+            <h4>Bachelor of Data Science <span class="cgpa">CGPA: 3.96</span></h4>
+            <p class="timeline-org">MNS University of Agriculture, Multan</p>
+          </div>
+        </div>
       </div>
     </div>
 
-
-
-<section class="projects-section" style="padding: 50px 15px; background-color: inherit;">
-
-  <!-- Section Heading -->
-  <div class="row justify-content-center mb-5">
-    <div class="col-md-12 text-center">
-      <h2 style="color: #4E3629; font-family: 'Lora', serif; font-size: 2rem; font-weight: bold;">
-        Genomic Selection For Resilient Crop Breeding In South Punjab
-      </h2>
+    <!-- Certificates -->
+    <div class="resume-block">
+      <h3 class="resume-block-title"><span class="block-icon">📜</span> Certificates</h3>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <span class="cert-org">Great Learning</span>
+          </div>
+          <h4>Data Mining</h4>
+          <p>Studied data mining techniques including classification, clustering, association, and anomaly detection, with a focus on extracting valuable insights from large datasets.</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <span class="cert-org">Simplilearn</span>
+          </div>
+          <h4>Statistics for Data Science</h4>
+          <p>Learned key statistical techniques like probability, hypothesis testing, and regression analysis, applied to data science problems for insightful decision-making.</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <span class="cert-org">Kaggle</span>
+          </div>
+          <h4>Python</h4>
+          <p>Demonstrates proficiency in Python, covering syntax, data structures, and libraries like NumPy, Pandas, Matplotlib, and Seaborn.</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <span class="cert-org">Great Learning</span>
+          </div>
+          <h4>Machine Learning Algorithms</h4>
+          <p>Gained deep insights and practical skills in various machine learning techniques and algorithms to solve real-world problems.</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <span class="cert-org">Simplilearn</span>
+          </div>
+          <h4>Image Recognition using ML</h4>
+          <p>Completed a course on image recognition using Machine Learning, gaining expertise in applying ML models for object classification and image analysis.</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-header">
+            <span class="cert-org">Kaggle</span>
+          </div>
+          <h4>Computer Vision</h4>
+          <p>Mastered tools and algorithms to enable machines to 'see' and understand the world, with practical skills in object detection and AI-driven visual analysis.</p>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Content Row -->
-  <div class="col-md-12 d-flex ftco-animate mb-5 project-container" 
-       style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px;">
-
-    <!-- Left: Image -->
-    <div class="ProjectPoster" style="flex: 1 1 55%; max-width: 55%; margin-bottom: 20px;">
-      <img src="images/FYPposter.jpg" 
-           alt="Project Poster" 
-           style="width: 100%; height: auto; border-radius: 8px; object-fit: contain;">
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">My Work</span>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">A curated selection of Data Science, ML, and AI projects spanning Python, Power BI, NLP, and Deep Learning.</p>
     </div>
 
-    <!-- Right: Text + Button -->
-    <div class="text" style="
-        flex: 1 1 40%;
-        max-width: 40%;
-        display: flex; 
-        flex-direction: column; 
-        justify-content: flex-start;
-        text-align: justify;
-        gap: 15px;">
+    <!-- Featured Project -->
+    <div class="featured-project reveal">
+      <div class="featured-img">
+        <img src="images/FYPposter.jpg" alt="Genomic Selection Project" />
+      </div>
+      <div class="featured-info">
+        <span class="featured-badge">⭐ Featured Project</span>
+        <h3>Genomic Selection For Resilient Crop Breeding In South Punjab</h3>
+        <p>This project focuses on using genomic selection techniques to predict key traits in wheat, such as yield and plant height, using genotype and phenotype data. We implemented various machine learning models including Random Forest and XGBoost to select the most important SNPs (genetic markers) for accurate trait prediction.</p>
+        <p>Tools used include Python, Pandas, Scikit-learn, Matplotlib, Seaborn, Beagle, and Plink. The model pipeline includes data cleaning, feature selection using GWAS and ML, imputation using Beagle, and performance comparison across models.</p>
+        <div class="featured-tags">
+          <span>Python</span><span>Random Forest</span><span>XGBoost</span><span>Scikit-learn</span><span>Genomics</span>
+        </div>
+        <a href="https://muneeza4.github.io/Genomic_Selection_for_Resilient_Crop_Breeding_in_South-Punjab/" target="_blank" class="btn btn-primary">View Project →</a>
+      </div>
+    </div>
 
-      <p>This project focuses on using genomic selection techniques to predict key traits in wheat, such as yield and plant height, using genotype and phenotype data. We implemented various machine learning models including Random Forest, XGBoost to select the most important SNPs (genetic markers) for accurate trait prediction.</p>
+    <!-- Project Grid -->
+    <div class="projects-grid">
 
-      <p>Tools used include Python, Pandas, Scikit-learn, Matplotlib, Pyplot, Seaborn, Beagle, Plink. The model pipeline includes data cleaning, feature selection using GWAS and ML, imputation using Beagle, and performance comparison across models.</p>
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image: url('images/Job_recommendation.png');"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>NLP</span><span>TF-IDF</span><span>Streamlit</span></div>
+          <h4><a href="https://muneeza-job-recommendation-system.streamlit.app/" target="_blank">Personalized Job Recommendation System</a></h4>
+          <p>A content-based recommendation system using TF-IDF and cosine similarity. Features an interactive Streamlit interface for personalized job matching.</p>
+          <div class="project-links">
+            <a href="https://github.com/Muneeza4/Job_recommendation_system" target="_blank" class="proj-link">GitHub</a>
+            <a href="https://muneeza-job-recommendation-system.streamlit.app/" target="_blank" class="proj-link proj-link-primary">Live Demo</a>
+          </div>
+        </div>
+      </div>
 
-      <!-- Button below text -->
-      <p style="margin-top: 20px;">
-        <a href="https://muneeza4.github.io/Genomic_Selection_for_Resilient_Crop_Breeding_in_South-Punjab/" 
-           style="
-              background-color: #FFFFFF; 
-              color: #0B1E63; 
-              border: 2px solid #0B1E63; 
-              text-decoration: none; 
-              padding: 0.75em 2em; 
-              font-family: 'Lora', serif; 
-              font-size: 1.1rem;
-              border-radius: 8px; 
-              display: inline-block;
-              transition: background-color 0.3s, transform 0.2s;
-           "
-           onmouseover="this.style.backgroundColor='#E0E0E0'; this.style.transform='scale(1.05)';"
-           onmouseout="this.style.backgroundColor='#FFFFFF'; this.style.transform='scale(1)';">
-          View Project
-        </a>
-      </p>
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image: url('images/deepfake.png');"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Deep Learning</span><span>Audio ML</span><span>Streamlit</span></div>
+          <h4><a href="https://github.com/Muneeza4/Deep_fake_audio_detection" target="_blank">Deep Fake Audio Detection</a></h4>
+          <p>End-to-end deepfake audio classification using MFCC features, PCA, ensemble ML, and deep learning models (ANN, RNN, LSTM, GRU). Deployed on Streamlit.</p>
+          <div class="project-links">
+            <a href="https://github.com/Muneeza4/Deep_fake_audio_detection" target="_blank" class="proj-link proj-link-primary">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image: url('images/proj_2.png');"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>ML</span><span>PostgreSQL</span><span>Streamlit</span></div>
+          <h4><a href="https://credit-card-revenue-prediction-app.streamlit.app/" target="_blank">Credit Card Revenue Prediction</a></h4>
+          <p>Analyzed customer data from PostgreSQL to predict revenue using Random Forest Regressor, with Plotly Treemap visualizations and demographic segmentation.</p>
+          <div class="project-links">
+            <a href="https://credit-card-revenue-prediction-app.streamlit.app/" target="_blank" class="proj-link proj-link-primary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image: url('images/Search_engine.png');"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>NLP</span><span>TF-IDF</span><span>Gradio</span></div>
+          <h4><a href="https://huggingface.co/spaces/muneeza3/Search_Engine_LHC_Judgements" target="_blank">Search Engine for LHC Judgements</a></h4>
+          <p>NLP-based judicial search engine that retrieves and ranks legal judgments using Boolean, phrase, and wildcard queries with TF-IDF and cosine similarity. Deployed on Hugging Face.</p>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/muneeza3/Search_Engine_LHC_Judgements" target="_blank" class="proj-link proj-link-primary">Hugging Face</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image: url('images/proj_4.png');"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>Power BI</span><span>Data Viz</span></div>
+          <h4><a href="https://github.com/Muneeza4/Super_Market_Sales_Analysis_Power-Bi-Project" target="_blank">Super Market Sales Analysis</a></h4>
+          <p>Analyzed and visualized supermarket sales data in Power BI with year slicers, market distribution, and profit analysis by product categories.</p>
+          <div class="project-links">
+            <a href="https://github.com/Muneeza4/Power-Bi-Project/tree/main/Super-Market-Sales-Analysis-main/Super-Market-Sales-Analysis-main" target="_blank" class="proj-link proj-link-primary">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image: url('images/proj_5.png');"></div>
+        <div class="project-body">
+          <div class="project-tags"><span>PostgreSQL</span><span>Power BI</span></div>
+          <h4><a href="https://github.com/Muneeza4/Credit_Card_Analysis_PowerBi_Dashboard" target="_blank">Credit Card Analysis Dashboard</a></h4>
+          <p>Power BI dashboard integrating PostgreSQL data with revenue trends, customer segmentation, and dynamic filters for deeper credit card financial insights.</p>
+          <div class="project-links">
+            <a href="https://github.com/Muneeza4/Power-Bi-Project/tree/main/Credit%20Card%20Financial%20Dashboard" target="_blank" class="proj-link proj-link-primary">GitHub</a>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 </section>
 
-<!-- Responsive CSS -->
-<style>
-  @media (max-width: 768px) {
-    .project-container {
-      flex-direction: column;   /* stack vertically */
-      align-items: center;
-    }
-
-    .ProjectPoster {
-      max-width: 100% !important;
-      flex: 1 1 100% !important;
-      margin-bottom: 20px;
-    }
-
-    .text {
-      max-width: 100% !important;
-      flex: 1 1 100% !important;
-      text-align: justify;
-    }
-
-    .text p a {
-      display: block;
-      text-align: center;   /* button center */
-      width: fit-content;
-      margin: 0 auto;
-    }
-  }
-</style>
-
-	  
-
-
-<section class="projects-section" style="padding: 50px 15px; background-color: inherit;">
-  <div class="container" style="padding-left: 10px; padding-right: 10px;">
-    <div class="row justify-content-center gx-3 gy-4"> <!-- gx-3: horizontal gap, gy-4: vertical gap -->
-
-      <!-- Project 1 -->
-      <div class="col-md-6 col-lg-4 d-flex ftco-animate">
-        <div class="blog-entry w-100">
-          <a href="https://muneeza-job-recommendation-system.streamlit.app/" class="block-20 zoom-effect" 
-             style="background-image: url('images/Job_recommendation.png'); background-size: cover; background-position: center; border-radius: 8px; border: 3px solid rgba(128,128,128,0.3);">
-          </a>
-          <div class="text mt-3" style="text-align: justify;">
-            <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-              <a href="https://github.com/Muneeza4/Job_recommendation_system" style="color: inherit;"><b>Personalized Job Recommendation System Leveraging TF-IDF and Cosine Similarity</b></a>
-            </h3>
-            <p>A content-based recommendation system. The project features an interactive Streamlit interface, visualizations, and a machine learning engine for personalized job recommendations.</p>
-            <p>This system matches job seekers to suitable roles based on job descriptions, helping users find relevant positions efficiently. The model utilizes text processing techniques like TF-IDF and uses cosine similarity to recommend similar roles.</p>
-          </div>
-        </div>
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-subtitle">Below are the details to reach out to me!</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <div class="contact-icon">📍</div>
+        <h4>Location</h4>
+        <p>Punjab, Pakistan</p>
       </div>
-
-      <!-- Project 2 -->
-      <div class="col-md-6 col-lg-4 d-flex ftco-animate">
-        <div class="blog-entry w-100">
-          <a href="https://github.com/Muneeza4/Deep_fake_audio_detection" class="block-20 zoom-effect" 
-             style="background-image: url('images/deepfake.png'); background-size: cover; background-position: center; border-radius: 8px; border: 3px solid rgba(128,128,128,0.3);">
-          </a>
-          <div class="text mt-3" style="text-align: justify;">
-            <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-              <a href="https://github.com/Muneeza4/Deep_fake_audio_detection" style="color: inherit;"><b>Deep Fake Audio Detection</b></b></a>
-            </h3>
-            <p>Developed an end-to-end Deepfake Audio Classification System to detect synthetic and manipulated speech. The system extracts acoustic and spectral features including MFCCs, spectral centroid, bandwidth, roll-off, contrast, zero-crossing rate, and signal energy using Librosa. Features are normalized, reduced using PCA, and classified using an ensemble machine learning model for robust performance. Experimented with ANN, RNN, LSTM, and GRU. Deployed as an interactive Streamlit web app for real-time predictions.</p>
-          </div>
-        </div>
+      <div class="contact-card reveal">
+        <div class="contact-icon">📞</div>
+        <h4>Phone</h4>
+        <p><a href="tel:+923290314424">0329-0314424</a></p>
       </div>
-
-      <!-- Project 3 -->
-      <div class="col-md-6 col-lg-4 d-flex ftco-animate">
-        <div class="blog-entry w-100">
-          <a href="https://credit-card-revenue-prediction-app.streamlit.app/" class="block-20 zoom-effect" 
-             style="background-image: url('images/proj_2.png'); background-size: cover; background-position: center; border-radius: 8px; border: 3px solid rgba(128,128,128,0.3);">
-          </a>
-          <div class="text mt-3" style="text-align: justify;">
-            <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-              <a href="https://credit-card-revenue-prediction-app.streamlit.app/" style="color: inherit;"><b>Credit Card Revenue Prediction using Python and Machine Learning!</b></a>
-            </h3>
-            <p>I analyzed customer data from a PostgreSQL database to uncover insights and predict revenue based on demographics.</p>
-            <p>Key highlights include: Visualizing revenue by expense type with Plotly Treemap Identifying top states by total revenue, average annual fees by age group. Predicting revenue using a Random Forest Regressor model.</p>
-          </div>
-        </div>
+      <div class="contact-card reveal">
+        <div class="contact-icon">✉️</div>
+        <h4>Email</h4>
+        <p><a href="mailto:muneezamehboob3@gmail.com">muneezamehboob3@gmail.com</a></p>
       </div>
-
-      <!-- Project 4 -->
-      <div class="col-md-6 col-lg-4 d-flex ftco-animate">
-        <div class="blog-entry w-100">
-          <a hrefhttps://muneeza3-search-engine-lhc-judgements.hf.space/?logs=container&__theme=system&deep_link=Tlhn1RRC840" class="block-20 zoom-effect" 
-             style="background-image: url('images/Search_engine.png'); background-size: cover; background-position: center; border-radius: 8px; border: 3px solid rgba(128,128,128,0.3);">
-          </a>
-          <div class="text mt-3" style="text-align: justify;">
-            <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-              <a href="https://huggingface.co/spaces/muneeza3/Search_Engine_LHC_Judgements" style="color: inherit;"><b>Search_engine_for_LHC_Judgements</b></a>
-            </h3>
-            <p>Tool used: Python</p>
-            <p> <strong>Project Overview:</strong> Developed an NLP-based Judicial Search Engine that retrieves and ranks legal judgments using Boolean, phrase, and wildcard queries. Judicial data was scraped from the Lahore High Court (LHC) website, converted from PDF to text, structured into CSV, and processed using TF-IDF and cosine similarity. The system is deployed as a web application using Gradio on Hugging Face Spaces.</p>
-          </div>
-        </div>
+      <div class="contact-card reveal">
+        <div class="contact-icon">📄</div>
+        <h4>Resume</h4>
+        <p><a href="https://drive.google.com/file/d/1iNVj2tDIOaCoz9dqPz0paULvXVfW3Z7e/view?usp=sharing" target="_blank">Download CV</a></p>
       </div>
-
-      <!-- Project 5 -->
-      <div class="col-md-6 col-lg-4 d-flex ftco-animate">
-        <div class="blog-entry w-100">
-          <a href="https://github.com/Muneeza4/Super_Market_Sales_Analysis_Power-Bi-Project" class="block-20 zoom-effect" 
-             style="background-image: url('images/proj_4.png'); background-size: cover; background-position: center; border-radius: 8px; border: 3px solid rgba(128,128,128,0.3);">
-          </a>
-          <div class="text mt-3" style="text-align: justify;">
-            <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-              <a href="https://github.com/Muneeza4/Power-Bi-Project/tree/main/Super-Market-Sales-Analysis-main/Super-Market-Sales-Analysis-main" style="color: inherit;"><b>Super Market Sales Analysis</b></a>
-            </h3>
-            <p>Tools Used: Power BI</p>
-            <p><strong>Project Overview:</strong> Analyzed and visualized supermarket sales data with key features including cards displaying the sum of quantity, sales, and shipped orders. Implemented year slicers for dynamic filtering. Key visualizations included sales distribution across different markets and detailed profit analysis by product categories and sub-categories.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 6 -->
-      <div class="col-md-6 col-lg-4 d-flex ftco-animate">
-        <div class="blog-entry w-100">
-          <a href="https://github.com/Muneeza4/Credit_Card_Analysis_PowerBi_Dashboard" class="block-20 zoom-effect" 
-             style="background-image: url('images/proj_5.png'); background-size: cover; background-position: center; border-radius: 8px; border: 3px solid rgba(128,128,128,0.3);">
-          </a>
-          <div class="text mt-3" style="text-align: justify;">
-            <h3 class="heading" style="color: #4E3629; font-family: 'Lora', serif;">
-              <a href="https://github.com/Muneeza4/Power-Bi-Project/tree/main/Credit%20Card%20Financial%20Dashboard" style="color: inherit;"><b>Credit Card Analysis</b></a>
-            </h3>
-            <p>Tools Used: PostgreSQL, Power BI</p>
-            <p><strong>Project Overview:</strong> Dashboard for analyzing credit card sales data with key features such as data integration from PostgreSQL to Power BI, and revenue calculations consistent with Python results. Visualizations include revenue trends over time, key sales metrics like total sales, average transaction value, and customer segmentation, along with dynamic filters for deeper insights and analysis.</p>
-          </div>
-        </div>
-      </div>
-
-    </div> <!-- row -->
-  </div> <!-- container -->
+    </div>
+    <div class="social-links reveal">
+      <a href="https://www.linkedin.com/in/muneeza-mehboob-4365a82a2/" target="_blank" class="social-btn">LinkedIn</a>
+      <a href="https://github.com/Muneeza4" target="_blank" class="social-btn">GitHub</a>
+      <a href="https://www.kaggle.com/muneeza3" target="_blank" class="social-btn">Kaggle</a>
+    </div>
+  </div>
 </section>
 
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <p>© 2025 Muneeza Mehboob. Crafted with ❤️ & Python.</p>
+</footer>
 
-
-	
-	  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-			<div class="col-md-7 heading-section text-center ftco-animate">
-			  <h2 class="mb-4" style="color: #4E3629; font-family: 'Lora', serif;">Contact Me</h2>
-			  <p>Below are the details to reach out to me!</p>
-			</div>
-		  </div>
-  
-		  <div class="row d-flex contact-info mb-5">
-			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-				<div class="align-self-stretch box p-4 text-center">
-					<div class="icon d-flex align-items-center justify-content-center">
-						<span class="icon-map-signs"></span>
-					</div>
-					<h3 class="mb-4" style="color:  #4E3629;">Address</h3>
-				  <p style="color: #AB886D;" >Punjab, Pakistan</p>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-				<div class="align-self-stretch box p-4 text-center">
-					<div class="icon d-flex align-items-center justify-content-center">
-						<span class="icon-phone2"></span>
-					</div>
-					<h3 class="mb-4" style="color:  #4E3629;">Contact Number</h3>
-					<p style="color: #AB886D;"><a href="tel://03290314424" style="color: #AB886D; text-decoration: none;">0329-0314424</a></p>
-					
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-				<div class="align-self-stretch box p-4 text-center">
-					<div class="icon d-flex align-items-center justify-content-center">
-						<span class="icon-paper-plane"></span>
-					</div>
-					<h3 class="mb-4" style="color:  #4E3629;">Email Address</h3>
-					<p><a href="mailto:muneezamehboob3@gmail.com" style="color: #AB886D; text-decoration: none;">muneezamehboob3@gmail.com</a></p>
-
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-				<div class="align-self-stretch box p-4 text-center">
-					<div class="icon d-flex align-items-center justify-content-center">
-						<span class="icon-globe"></span>
-					</div>
-					<h3 class="mb-4" style="color: #4E3629;">Download Resume</h3>
-
-				  <p><a href="https://drive.google.com/file/d/1iNVj2tDIOaCoz9dqPz0paULvXVfW3Z7e/view?usp=sharing" style="color: #AB886D; text-decoration: none;">Click Here</a></p>
-				</div>
-			</div>
-  
-	 </div>
-   </section>
-  
-  
-   
-	  
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-  
-  
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-	
-	<script src="js/main.js"></script>
-	  
-	</body>
-  </html>
+<script src="script.js"></script>
+</body>
+</html>
