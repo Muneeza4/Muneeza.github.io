@@ -853,9 +853,6 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 }
 
 /* =========================================
-   RESPONSIVE
-========================================= */
-/* =========================================
    RESPONSIVE — LAPTOP (1024px – 1280px)
 ========================================= */
 @media (max-width: 1280px) {
@@ -1171,7 +1168,7 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
 
 <!-- =================== PROJECTS =================== -->
-<<section id="projects">
+<section id="projects">
   <div class="container">
     <div class="section-label reveal">Portfolio</div>
     <h2 class="section-title reveal">Featured <em>Projects</em></h2>
@@ -1182,7 +1179,7 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
     <div class="featured-project reveal">
       <div class="feat-img-wrap" style="overflow:hidden; border-radius:12px;">
         <img src="images/FYPposter.jpg" alt="Genomic Selection Project"
-          style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;"
+          style="width:100%; height:auto; display:block;"
           onerror="this.style.background='#0B1E63'; this.src=''; this.alt='';"/>
       </div>
       <div class="feat-content">
@@ -1204,14 +1201,14 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
     </div>
 
     <!-- Project Grid -->
-    <div class="projects-grid">
+    <div class="projects-grid" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:2rem;">
 
       <!-- CARD 1 — GAN Super Resolution -->
       <div class="project-card reveal">
-        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+        <div class="proj-img" style="width:100%; overflow:hidden; border-radius:8px 8px 0 0;">
           <img src="images/gan.png" alt="GAN-Based Image Super-Resolution"
-            style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;"
-            onerror="this.style.background='#0B1E63';"/>
+            style="width:100%; height:auto; display:block;"
+            onerror="this.style.background='#0B1E63'; this.style.minHeight='160px';"/>
         </div>
         <div class="proj-body">
           <h4>Comparative Study of GAN-Based Image Super-Resolution on DIV2K Dataset</h4>
@@ -1229,10 +1226,10 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
       <!-- CARD 2 — UCF-101 Action Recognition -->
       <div class="project-card reveal">
-        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+        <div class="proj-img" style="width:100%; overflow:hidden; border-radius:8px 8px 0 0;">
           <img src="images/ucf.jpg" alt="UCF-101 Video Action Recognition"
-            style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;"
-            onerror="this.style.background='#0B1E63';"/>
+            style="width:100%; height:auto; display:block;"
+            onerror="this.style.background='#0B1E63'; this.style.minHeight='160px';"/>
         </div>
         <div class="proj-body">
           <h4>UCF-101 Video Action Recognition — MobileNetV2 + LSTM</h4>
@@ -1250,10 +1247,10 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
       <!-- CARD 3 — Attention Mechanism -->
       <div class="project-card reveal">
-        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+        <div class="proj-img" style="width:100%; overflow:hidden; border-radius:8px 8px 0 0;">
           <img src="images/attention.jpg" alt="Transformer Attention"
-            style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;"
-            onerror="this.style.background='#0B1E63';"/>
+            style="width:100%; height:auto; display:block;"
+            onerror="this.style.background='#0B1E63'; this.style.minHeight='160px';"/>
         </div>
         <div class="proj-body">
           <h4>Pattern Recognition — 3-Level Attention Mechanism</h4>
@@ -1270,10 +1267,10 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
       <!-- CARD 4 — Job Recommendation -->
       <div class="project-card reveal">
-        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+        <div class="proj-img" style="width:100%; overflow:hidden; border-radius:8px 8px 0 0;">
           <img src="images/Job_recommendation.png" alt="Job Recommendation System"
-            style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;"
-            onerror="this.style.background='#0B1E63';"/>
+            style="width:100%; height:auto; display:block;"
+            onerror="this.style.background='#0B1E63'; this.style.minHeight='160px';"/>
         </div>
         <div class="proj-body">
           <h4>Personalized Job Recommendation System — TF-IDF & Cosine Similarity</h4>
@@ -1285,10 +1282,10 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
       <!-- CARD 5 — Deepfake Audio -->
       <div class="project-card reveal">
-        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+        <div class="proj-img" style="width:100%; overflow:hidden; border-radius:8px 8px 0 0;">
           <img src="images/deepfake.png" alt="Deepfake Audio Detection"
-            style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;"
-            onerror="this.style.background='#0B1E63';"/>
+            style="width:100%; height:auto; display:block;"
+            onerror="this.style.background='#0B1E63'; this.style.minHeight='160px';"/>
         </div>
         <div class="proj-body">
           <h4>Deep Fake Audio Detection System</h4>
@@ -1300,10 +1297,10 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
       <!-- CARD 6 — Credit Card Revenue -->
       <div class="project-card reveal">
-        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+        <div class="proj-img" style="width:100%; overflow:hidden; border-radius:8px 8px 0 0;">
           <img src="images/proj_2.png" alt="Credit Card Revenue Prediction"
-            style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;"
-            onerror="this.style.background='#0B1E63';"/>
+            style="width:100%; height:auto; display:block;"
+            onerror="this.style.background='#0B1E63'; this.style.minHeight='160px';"/>
         </div>
         <div class="proj-body">
           <h4>Credit Card Revenue Prediction — ML & Python</h4>
@@ -1315,10 +1312,10 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
       <!-- CARD 7 — LHC Search Engine -->
       <div class="project-card reveal">
-        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+        <div class="proj-img" style="width:100%; overflow:hidden; border-radius:8px 8px 0 0;">
           <img src="images/Search_engine.png" alt="LHC Search Engine"
-            style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;"
-            onerror="this.style.background='#0B1E63';"/>
+            style="width:100%; height:auto; display:block;"
+            onerror="this.style.background='#0B1E63'; this.style.minHeight='160px';"/>
         </div>
         <div class="proj-body">
           <h4>NLP Search Engine for LHC Judgements</h4>
@@ -1330,10 +1327,10 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
       <!-- CARD 8 — Supermarket Sales -->
       <div class="project-card reveal">
-        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+        <div class="proj-img" style="width:100%; overflow:hidden; border-radius:8px 8px 0 0;">
           <img src="images/proj_4.png" alt="Supermarket Sales Analysis"
-            style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;"
-            onerror="this.style.background='#0B1E63';"/>
+            style="width:100%; height:auto; display:block;"
+            onerror="this.style.background='#0B1E63'; this.style.minHeight='160px';"/>
         </div>
         <div class="proj-body">
           <h4>Super Market Sales Analysis — Power BI</h4>
@@ -1345,10 +1342,10 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
       <!-- CARD 9 — Credit Card Dashboard -->
       <div class="project-card reveal">
-        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+        <div class="proj-img" style="width:100%; overflow:hidden; border-radius:8px 8px 0 0;">
           <img src="images/proj_5.png" alt="Credit Card Financial Dashboard"
-            style="width:100%; height:100%; object-fit:contain; object-position:center; display:block;"
-            onerror="this.style.background='#0B1E63';"/>
+            style="width:100%; height:auto; display:block;"
+            onerror="this.style.background='#0B1E63'; this.style.minHeight='160px';"/>
         </div>
         <div class="proj-body">
           <h4>Credit Card Financial Dashboard — PostgreSQL & Power BI</h4>
