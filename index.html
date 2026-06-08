@@ -1170,6 +1170,7 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 </section>
 
 <!-- =================== PROJECTS =================== -->
+<!-- =================== PROJECTS =================== -->
 <section id="projects">
   <div class="container">
     <div class="section-label reveal">Portfolio</div>
@@ -1203,6 +1204,63 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
     <!-- Project Grid -->
     <div class="projects-grid">
 
+      <!-- NEW CARD 1 — GAN Super Resolution -->
+      <div class="project-card reveal">
+        <div class="proj-img">
+          <img src="images/gan.png" alt="GAN-Based Image Super-Resolution" onerror="this.style.background='#0B1E63';"/>
+        </div>
+        <div class="proj-body">
+          <h4>Comparative Study of GAN-Based Image Super-Resolution on DIV2K Dataset</h4>
+          <p>Implemented and compared SRResNet, SRGAN, and ESRGAN from scratch for 4x image upscaling on DIV2K. Used VGG perceptual loss, PixelShuffle upsampling, and RRDB architecture. Trained on Kaggle with full checkpoint resume logic.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">GAN</span>
+            <span class="tech-tag">ESRGAN</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">DIV2K</span>
+          </div>
+          <a href="https://github.com/Muneeza4/Comparative-Study-of-GAN-Based-Image-Super-Resolution-on-DIV2K-Dataset" class="proj-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- NEW CARD 2 — UCF-101 Action Recognition -->
+      <div class="project-card reveal">
+        <div class="proj-img">
+          <img src="images/ucf.png" alt="UCF-101 Video Action Recognition" onerror="this.style.background='#0B1E63';"/>
+        </div>
+        <div class="proj-body">
+          <h4>UCF-101 Video Action Recognition — MobileNetV2 + LSTM</h4>
+          <p>End-to-end video action recognition on UCF-101 using a CNN + RNN hybrid. MobileNetV2 extracts spatial features from 8 key frames per video; LSTM learns temporal patterns across frames. Trained on Kaggle with dual GPU using MirroredStrategy — 101 action classes.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">MobileNetV2</span>
+            <span class="tech-tag">LSTM</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">UCF-101</span>
+          </div>
+          <a href="https://github.com/Muneeza4/UCF-101-Video-Action-Recognition" class="proj-link" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- NEW CARD 3 — RAG Chatbot -->
+      <div class="project-card reveal">
+        <div class="proj-img">
+          <img src="images/attention.png" alt="Transformer Attention" onerror="this.style.background='#0B1E63';"/>
+        </div>
+        <div class="proj-body">
+          <h4>Pattern Recognition — 3-Level Attention Mechanism</h4>
+          <p>Transformers use attention. But do you know what's happening mathematically?  I implemented 3 levels of attention from scratch using only NumPy — on real wearable sensor data (HAR dataset).No high-level libraries. Just matrix math.Similarity matrices, Positional Encoding, Scaled Q-K-V Attention</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Numpy</span>
+            <span class="tech-tag">Matplotlib</span>
+            <span class="tech-tag">Mathematics</span>
+            <span class="tech-tag">Transformer</span>
+          </div>
+          <a href="#" class="proj-link" target="https://github.com/Muneeza4/Pattern-Recognition-3-Level-Attention-Mechanism/tree/main">View Project</a>
+        </div>
+      </div>
+
+      <!-- EXISTING CARDS BELOW — unchanged -->
       <div class="project-card reveal">
         <div class="proj-img">
           <img src="images/Job_recommendation.png" alt="Job Recommendation System" onerror="this.style.background='#0B1E63';"/>
