@@ -1171,7 +1171,7 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
 
 <!-- =================== PROJECTS =================== -->
-<section id="projects">
+<<section id="projects">
   <div class="container">
     <div class="section-label reveal">Portfolio</div>
     <h2 class="section-title reveal">Featured <em>Projects</em></h2>
@@ -1180,8 +1180,10 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
 
     <!-- Featured Project -->
     <div class="featured-project reveal">
-      <div class="feat-img-wrap">
-        <img src="images/FYPposter.jpg" alt="Genomic Selection Project" onerror="this.style.background='#0B1E63'; this.src=''; this.alt='';"/>
+      <div class="feat-img-wrap" style="overflow:hidden; border-radius:12px;">
+        <img src="images/FYPposter.jpg" alt="Genomic Selection Project"
+          style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+          onerror="this.style.background='#0B1E63'; this.src=''; this.alt='';"/>
       </div>
       <div class="feat-content">
         <div class="feat-tag">⭐ Featured Project · Final Year</div>
@@ -1204,10 +1206,12 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
     <!-- Project Grid -->
     <div class="projects-grid">
 
-      <!-- NEW CARD 1 — GAN Super Resolution -->
+      <!-- CARD 1 — GAN Super Resolution -->
       <div class="project-card reveal">
-        <div class="proj-img">
-          <img src="images/gan.png" alt="GAN-Based Image Super-Resolution" onerror="this.style.background='#0B1E63';"/>
+        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+          <img src="images/gan.png" alt="GAN-Based Image Super-Resolution"
+            style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+            onerror="this.style.background='#0B1E63';"/>
         </div>
         <div class="proj-body">
           <h4>Comparative Study of GAN-Based Image Super-Resolution on DIV2K Dataset</h4>
@@ -1223,10 +1227,12 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
         </div>
       </div>
 
-      <!-- NEW CARD 2 — UCF-101 Action Recognition -->
+      <!-- CARD 2 — UCF-101 Action Recognition -->
       <div class="project-card reveal">
-        <div class="proj-img">
-          <img src="images/ucf.jpg" alt="UCF-101 Video Action Recognition" onerror="this.style.background='#0B1E63';"/>
+        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+          <img src="images/ucf.jpg" alt="UCF-101 Video Action Recognition"
+            style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+            onerror="this.style.background='#0B1E63';"/>
         </div>
         <div class="proj-body">
           <h4>UCF-101 Video Action Recognition — MobileNetV2 + LSTM</h4>
@@ -1242,28 +1248,32 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
         </div>
       </div>
 
-      <!-- NEW CARD 3 — RAG Chatbot -->
+      <!-- CARD 3 — Attention Mechanism -->
       <div class="project-card reveal">
-        <div class="proj-img">
-          <img src="images/attention.jpg" alt="Transformer Attention" onerror="this.style.background='#0B1E63';"/>
+        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+          <img src="images/attention.jpg" alt="Transformer Attention"
+            style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+            onerror="this.style.background='#0B1E63';"/>
         </div>
         <div class="proj-body">
           <h4>Pattern Recognition — 3-Level Attention Mechanism</h4>
-          <p>Transformers use attention. But do you know what's happening mathematically?  I implemented 3 levels of attention from scratch using only NumPy — on real wearable sensor data (HAR dataset).No high-level libraries. Just matrix math.Similarity matrices, Positional Encoding, Scaled Q-K-V Attention</p>
+          <p>Transformers use attention. But do you know what's happening mathematically? I implemented 3 levels of attention from scratch using only NumPy — on real wearable sensor data (HAR dataset). No high-level libraries. Just matrix math. Similarity matrices, Positional Encoding, Scaled Q-K-V Attention.</p>
           <div class="tech-tags">
             <span class="tech-tag">Numpy</span>
             <span class="tech-tag">Matplotlib</span>
             <span class="tech-tag">Mathematics</span>
             <span class="tech-tag">Transformer</span>
           </div>
-          <a href="#" class="proj-link" target="https://github.com/Muneeza4/Pattern-Recognition-3-Level-Attention-Mechanism/tree/main">View Project</a>
+          <a href="https://github.com/Muneeza4/Pattern-Recognition-3-Level-Attention-Mechanism/tree/main" class="proj-link" target="_blank">View Project</a>
         </div>
       </div>
 
-      <!-- EXISTING CARDS BELOW — unchanged -->
+      <!-- CARD 4 — Job Recommendation -->
       <div class="project-card reveal">
-        <div class="proj-img">
-          <img src="images/Job_recommendation.png" alt="Job Recommendation System" onerror="this.style.background='#0B1E63';"/>
+        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+          <img src="images/Job_recommendation.png" alt="Job Recommendation System"
+            style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+            onerror="this.style.background='#0B1E63';"/>
         </div>
         <div class="proj-body">
           <h4>Personalized Job Recommendation System — TF-IDF & Cosine Similarity</h4>
@@ -1273,9 +1283,12 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
         </div>
       </div>
 
+      <!-- CARD 5 — Deepfake Audio -->
       <div class="project-card reveal">
-        <div class="proj-img">
-          <img src="images/deepfake.png" alt="Deepfake Audio Detection" onerror="this.style.background='#0B1E63';"/>
+        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+          <img src="images/deepfake.png" alt="Deepfake Audio Detection"
+            style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+            onerror="this.style.background='#0B1E63';"/>
         </div>
         <div class="proj-body">
           <h4>Deep Fake Audio Detection System</h4>
@@ -1285,9 +1298,12 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
         </div>
       </div>
 
+      <!-- CARD 6 — Credit Card Revenue -->
       <div class="project-card reveal">
-        <div class="proj-img">
-          <img src="images/proj_2.png" alt="Credit Card Revenue Prediction" onerror="this.style.background='#0B1E63';"/>
+        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+          <img src="images/proj_2.png" alt="Credit Card Revenue Prediction"
+            style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+            onerror="this.style.background='#0B1E63';"/>
         </div>
         <div class="proj-body">
           <h4>Credit Card Revenue Prediction — ML & Python</h4>
@@ -1297,9 +1313,12 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
         </div>
       </div>
 
+      <!-- CARD 7 — LHC Search Engine -->
       <div class="project-card reveal">
-        <div class="proj-img">
-          <img src="images/Search_engine.png" alt="LHC Search Engine" onerror="this.style.background='#0B1E63';"/>
+        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+          <img src="images/Search_engine.png" alt="LHC Search Engine"
+            style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+            onerror="this.style.background='#0B1E63';"/>
         </div>
         <div class="proj-body">
           <h4>NLP Search Engine for LHC Judgements</h4>
@@ -1309,9 +1328,12 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
         </div>
       </div>
 
+      <!-- CARD 8 — Supermarket Sales -->
       <div class="project-card reveal">
-        <div class="proj-img">
-          <img src="images/proj_4.png" alt="Supermarket Sales Analysis" onerror="this.style.background='#0B1E63';"/>
+        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+          <img src="images/proj_4.png" alt="Supermarket Sales Analysis"
+            style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+            onerror="this.style.background='#0B1E63';"/>
         </div>
         <div class="proj-body">
           <h4>Super Market Sales Analysis — Power BI</h4>
@@ -1321,9 +1343,12 @@ footer em { color: var(--navy); font-style: normal; font-weight: 600; }
         </div>
       </div>
 
+      <!-- CARD 9 — Credit Card Dashboard -->
       <div class="project-card reveal">
-        <div class="proj-img">
-          <img src="images/proj_5.png" alt="Credit Card Financial Dashboard" onerror="this.style.background='#0B1E63';"/>
+        <div class="proj-img" style="overflow:hidden; width:100%; aspect-ratio:16/9; background:#0B1E63;">
+          <img src="images/proj_5.png" alt="Credit Card Financial Dashboard"
+            style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+            onerror="this.style.background='#0B1E63';"/>
         </div>
         <div class="proj-body">
           <h4>Credit Card Financial Dashboard — PostgreSQL & Power BI</h4>
